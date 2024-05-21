@@ -22,31 +22,13 @@ function Funktion-1a {
 
     foreach ($user in $csvData) {
 
-        # User properties
-        $Name = "$($user.Vorname) $($user.Name)"
-        $GivenName = $user.Vorname
-        $Surname = $user.Name
-        $SamAccountName = $user.Benutzername
-        $UserPrincipalName = "$SamAccountName@bztf.local" # username@domain.local
-        #$OUPath = "CN=Users,DC=bztf,DC=local"  # this is not needed because we get OUPAth from config
-        $Klasse = $user.Klasse
-        $Klasse2 = $user.Klasse2
-        $Enabled = $true
 
-        $existingUser = Get-ADUser -Filter {SamAccountName -eq $user.Benutzername} -ErrorAction SilentlyContinue
+        $existingUser = Get-ADUser -Filter "SamAccountName -eq '$($user.Benutzername)'" -ErrorAction SilentlyContinue
         if ($existingUser) {
-            Write-Output "User '$SamAccountName' already exists. Skipping creation.`n"
+            Write-Output "User '$($user.Benutzername)' already exists. Skipping creation.`n"
             continue
         } else {
 
-            # Debug output
-            Write-Output "Creating user: '$Name'"
-            Write-Output "Given Name: '$GivenName'"
-            Write-Output "Surname: '$Surname'"
-            Write-Output "SamAccountName: '$SamAccountName'"
-            Write-Output "UserPrincipalName: '$UserPrincipalName'"
-            Write-Output "OUPath: '$OUPath'"
-            Write-Output "Enabled: '$Enabled'`n"
 
             try {
                 New-ADUser -GivenName $user.Vorname `
@@ -59,10 +41,10 @@ function Funktion-1a {
                         -AccountPassword (ConvertTo-SecureString $config.InitPW -AsPlainText -Force) `
                         -ChangePasswordAtLogon $False
 
-                Write-Output "User '$SamAccountName' created successfully.`n"
+                Write-Output "User '$($user.Benutzername)' created successfully.`n"
             }
             catch {
-                Write-Error "An error occurred while creating user '$SamAccountName'"
+                Write-Error "An error occurred while creating user '$($user.Benutzername)'"
                 Write-Error $_
             }
 
@@ -70,10 +52,26 @@ function Funktion-1a {
         }
     }
 
+    # debugging
+    try {
+        $csvUserNames = $csvData | ForEach-Object {$_.SamAccountName} -ErrorAction Stop  
+    }
+    catch {
+        Write-Error "An error occurred while ghetting csvUserNames'"
+        Write-Error $_
+    }
+    try {
+        $ouDN = (Get-ADOrganizationalUnit -Filter {Name -eq "BZTF"}).DistinguishedName
+    }
+    catch {
+        Write-Error "An error occurred while creating user '$($user.Benutzername)'"
+        Write-Error $_
+    }
+
     # Alle nicht mehr in der CSV-Datei vorhandenen Benutzer deaktivieren
-    #$csvUserNames = $csvData | ForEach-Object {$_.SamAccountName} -ErrorAction SilentlyContinue
+    #$csvUserNames = $csvData | ForEach-Object {$_.SamAccountName} -ErrorAction Stop 
     #$ouDN = (Get-ADOrganizationalUnit -Filter {Name -eq "BZTF"}).DistinguishedName
-    #Get-ADUser -Filter {SamAccountName -in $csvUserNames} -SearchBase $ouDN | Disable-ADAccount
+    #Get-ADUser -Filter {SamAccountName -in $csvUserNames} -SearchBase $config.OUPath | Disable-ADAccount
 }
 
 Funktion-1a
