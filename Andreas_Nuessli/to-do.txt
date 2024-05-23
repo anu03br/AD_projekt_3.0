@@ -7,10 +7,12 @@ function 1a
 -delete function was commented out because bad stuff happens when you run import
 -still have to include the script to change sonderzeichen (ä to ae). skript was written by ave but not chekced yet
 -add to group bot incluede yet cause of data loss (terrible stuff)
+-- accounts shouldbe created in Lernende not BZTF
 -------------
 function 1b (create groups)
 -barebones skript exists, does nothing
 -we should use the extensionatributes to store values "klasse" and "klasse"
+--groups should be created in klassengruppen not BZTF
 -----------
 function 2a (logfile)
 -function exists, logs all users and PasswordLastSet, LastLogonDate, BadLogonCount to logfiles/$logfilenumber.txt
@@ -43,3 +45,4 @@ menue.ps1
 -was lost when (badstuff)
 -use switch case not elif
 -I guess write it all in german
+--23.05.24 - simple switch case menue created, added write host in german 
