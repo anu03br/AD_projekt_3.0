@@ -1,0 +1,45 @@
+To do List
+----------
+Stand 23.05.24 (create adusers)
+-----------
+function 1a
+-import from csv works but with errors
+-delete function was commented out because bad stuff happens when you run import
+-still have to include the script to change sonderzeichen (ä to ae). skript was written by ave but not chekced yet
+-add to group bot incluede yet cause of data loss (terrible stuff)
+-------------
+function 1b (create groups)
+-barebones skript exists, does nothing
+-we should use the extensionatributes to store values "klasse" and "klasse"
+-----------
+function 2a (logfile)
+-function exists, logs all users and PasswordLastSet, LastLogonDate, BadLogonCount to logfiles/$logfilenumber.txt
+-should be one log = timestamp and info
+-shold have action logs like this:
+------
+23.05.24
+1a.ps1 was run at 12:05
+3 Users were created
+0 users were deleted
+-----
+-store all users under log/users
+-DO NOT store passwords in cleartext
+--------------
+function 2b (single account management) 
+-was lost (terrible stuff) and has to be rewritten
+-menue to take $samaccountname and then provide options
+-subfunctions to Konto entsperren, Konto aktivieren, Passwort neu setzen
+-----------
+function 2c
+-function written, tested and working
+-v1.1 Abfrage nach gesperrten benutzern hinzugefügt (mit anzeige der anzahl falls 0)
+-this is done
+-----------
+config.ps1
+-should be good
+-maybe add extensionattributes if we use them
+----------
+menue.ps1
+-was lost when (badstuff)
+-use switch case not elif
+-I guess write it all in german

@@ -1,12 +1,4 @@
-﻿#--------------------------------------------------------------------------------
-# Autor: Amar Vejapi
-# Funktion des Skripts: Übersicht über alle AD Benutzer
-# Datum: 21.05.2024
-# Version: 0.6
-# Changelog
-# 17.05.24 V0.5 Skript Erstellt
-# 21.05.24 V0.6 
-#--------------------------------------------------------------------------------
+﻿#2c
 #Übersicht über alle AD-Benutzer:
 #  - für welche kein Passwort gesetzt ist
 #  - Passwort läuft nie ab
