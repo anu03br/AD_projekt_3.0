@@ -7,6 +7,7 @@
 # 16.05.24 V0.5 Skript Erstellt
 # 27.05.24 v0.6 -Path variable so gesetzt,dass sie die config cvariablen 'OULernende' und 'OUPath' zum krorrekten -path zusammensetzt
 # 27.05.24 v0.7 Unterfunktion erstellt, welche die AD Nutzer welche nicht mehr im CSV sind deaktiviert. Alle Write-Hosts und Comments auf Deutsch geschrieben
+# löschfunktion disabled ALLE Accounts auch admin
 # klasse und klasse 2 werden noch nicht hinzugefügt . we have no extensionattibutes to work with either find another wayy or make a skript to create them so teach can use them
 # namen mit sonderzeichen (ä,ü,ö) werden im AD nicht korrkt angezeigt, evtl konvertieren
 #--------------------------------------------------------------------------------
@@ -72,17 +73,14 @@ function Funktion-1a {
             # wenn der User noch nicht existiert erstelle einen Neuen Account
             try {
                 New-ADUser -GivenName $user.Vorname `
-                           -Surname $user.Nachname `
-                           -Name "$($user.Vorname) $($user.Nachname)" `
-                           -SamAccountName $user.Benutzername `
-                           -UserPrincipalName "$($user.Benutzername)@bztf.local" `
-                           -Path "OU=$($config.OULernende),$($config.OUPath)" `
-                           -Enabled $True `
-                           -AccountPassword (ConvertTo-SecureString $config.InitPW -AsPlainText -Force) `
-                           -ChangePasswordAtLogon $False `
-                           -Organization "BZTF Frauenfeld" `
-                           -Company $user.Klasse `
-                           -Department $user.Klasse2
+                        -Surname $user.Nachname `
+                        -Name "$($user.Vorname) $($user.Nachname)" `
+                        -SamAccountName $user.Benutzername `
+                        -UserPrincipalName "$($user.Benutzername)@bztf.local" `
+                        -Path "OU=$($config.OULernende),$($config.OUPath)" `
+                        -Enabled $True `
+                        -AccountPassword (ConvertTo-SecureString $config.InitPW -AsPlainText -Force) `
+                        -ChangePasswordAtLogon $False
 
                 Write-Output "Der Benutzer '$($user.Benutzername)' wurde erfolgreich erstellt.`n"
             }
@@ -90,23 +88,27 @@ function Funktion-1a {
                 Write-Error "Beim erstellen des Benutzers '$($user.Benutzername)' ist ein Fehler aufgetreten."
                 Write-Error $_
             }
+
+            try {
+                # set extension attributes
+                Set-ADUser -Identity $user.Benutzername `
+                -Add @{
+                    extensionAttribute1 = $user.Klasse                    
+                    extensionAttribute2 = $user.Klasse2
+                }
+                Write-Host "Der Benutzer '$($user.Benutzername)' hat Klasse $user.Klasse"
+                Write-Host "Der Benutzer '$($user.Benutzername)' hat Klasse2 $user.Klasse2"
+            }
+            catch {
+                Write-Error "Beim aufzeichnend der Klassen des Benutzers '$($user.Benutzername)' ist ein Fehler aufgetreten."
+                Write-Error $_
+            }
+
         }
     }
     Funktion-1a.5
 }
 
 Funktion-1a
-<# to get all atributes for an ADuser
-Get-ADUser -Identity 'jana.slezinger' -Properties *
-we could use the following attributes
--City
--Company maybe this?
--Country
--Department maybe this?
--Organization shouldnt this be BZTF Frauenfeld?
-27.05.24
-organization it saved correctly company too but no deparrtment(cause shes got only one class)
-needs to bbe tested further
-#>
 
-
+Get-ADUser -Identity 'jan.geisser' -Properties *
