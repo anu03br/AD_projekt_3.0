@@ -1,4 +1,12 @@
-﻿#2b
+﻿#--------------------------------------------------------------------------------
+# Autor: Amar Vejapi
+# Funktion des Skripts: Menü in welchem einzelne ADNutzer entsperrt, aktiviert oder ihr Passwort neu gesetzt werden kann
+# Datum: 23.05.2024
+# Version: 0.5
+# Changelog
+# 16.05.24 V0.5 Skript Erstellt
+#--------------------------------------------------------------------------------
+
 #Für einzelne AD-Accounts:
 #  - Konto entsperren
 #  - Konto aktivieren

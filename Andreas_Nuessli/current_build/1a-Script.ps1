@@ -7,7 +7,8 @@
 # 16.05.24 V0.5 Skript Erstellt
 # 27.05.24 v0.6 -Path variable so gesetzt,dass sie die config cvariablen 'OULernende' und 'OUPath' zum krorrekten -path zusammensetzt
 # 27.05.24 v0.7 Unterfunktion erstellt, welche die AD Nutzer welche nicht mehr im CSV sind deaktiviert. Alle Write-Hosts und Comments auf Deutsch geschrieben
-# klasse und klasse 2 werden noch nicht hinzugefügt . we have no extensionattibutes to work with either find another wayy or make a skript to create them so teach can use them
+# 28.05.24 v0.8 Beim erstellen des ADUsers wird die Klasse in -Company und die Klasse2 in -Department Gespeichert.
+#Diese Können bei den Benutzereigenschaften im Reiter Organisation eingesehen werden
 # namen mit sonderzeichen (ä,ü,ö) werden im AD nicht korrkt angezeigt, evtl konvertieren
 #--------------------------------------------------------------------------------
 #Erstellen/*Deaktivieren der AD-Accounts für alle Lernenden des BZT Frauenfeld gemäss CSV File

@@ -12,7 +12,7 @@
 
 # HashTable der Variable $config mit den Keys und Values.
 $config = @{
-    SchuelerCsv  = ".\schueler-klein.csv"
+    SchuelerCsv  = ".\schueler.csv"
     InitPw       = "bztf.001"
     OUPath       = "OU=BZTF,DC=bztf,DC=local"
     OULernende   = "Lernende"

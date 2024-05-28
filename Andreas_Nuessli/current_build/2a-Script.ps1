@@ -1,4 +1,11 @@
-﻿#2a
+﻿#--------------------------------------------------------------------------------
+# Autor: Amar Vejapi
+# Funktion des Skripts: Funktion, welche Sicherheitsrelevante Informationen uner "C:\tmp\users.log\Logfile" aufzeichnet.
+# Datum: 16.05.2024
+# Version: 0.5
+# Changelog
+# 28.05.24 V0.5 Skript Erstellt
+#--------------------------------------------------------------------------------
 #Sicherheitstechnisch wichtige Informationen der AD-Accounts täglich (Zeitpunkt frei wählbar) protokollieren (ein Logfile für alle AD-Accounts), wie:
 #  - Passwortalter
 #  - Datum der letzten Anmeldung
