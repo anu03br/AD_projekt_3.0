@@ -9,6 +9,18 @@
 #                       - Konto aktivieren
 #                       - Passwort neu setzen
 #-------------------------------------------------
+#--------------------------------------------------------------------------------
+# Autor: Amar Vejapi
+# Funktion des Skripts: Für einzelne AD-Accounts:
+#                       - Konto entsperren
+#                       - Konto aktivieren
+#                       - Passwort neu setzen
+# Datum: 21.05.2024
+# Version: 0.5
+# Changelog
+# 16.05.24 V0.5 Skript Erstellt
+# 28.05.24 v0.6
+#--------------------------------------------------------------------------------
 
 function Funktion-2b {
 

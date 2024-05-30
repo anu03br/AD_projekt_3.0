@@ -1,17 +1,26 @@
 function TextUmwandeln {
-    # Pfade zu den Dateien
-    $importfile = Read-Host "Geben Sie den Pfad zur Eingabe-Datei ein"
 
-    # Umlaute ersetzen
-    (Get-Content $importfile) |
+    param (
+        [string]$csvpath
+    )
+
+    # config file mit relativen pfad laden
+    . ".\config.ps1"
+    
+    # Pfad zu der neuen CSV datei
+    $newfile = "$PSScriptRoot\Schueler-Umlaut.csv"
+
+    # leist die CSV im Ã¼bergebenen Pfad aus und ersetzt alle instanzen von umlauten
+    #schreibt den inhalt in ein neues CSV unter dem pfad $newfile gespeichert
+    (Get-Content $csvpath) |
         ForEach-Object {
-            $_ -replace 'ä', 'ae' `
-               -replace 'ö', 'oe' `
-               -replace 'ü', 'ue'
-        } | Set-Content $importfile
+            $_ -replace 'Ã¤', 'ae' `
+               -replace 'Ã¶', 'oe' `
+               -replace 'Ã¼', 'ue'
+        } | Set-Content $newfile
 
-    Write-Host "Umlaute wurden ersetzt und die Datei wurde unter $importfile gespeichert."
+    Write-Host "Umlaute wurden ersetzt und die Datei wurde unter $newfile gespeichert."
 
 }
 
-TextUmwandeln
+TextUmwandeln -csvpath = $PSScriptRoot\

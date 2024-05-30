@@ -1,7 +1,7 @@
 Name;Vorname;Benutzername;Klasse;Klasse2
 Frey;Nicola;nicola.frey;INF25A;BM1_TE25A
 Geisser;Jan;jan.geisser;PKB24A;BM1_TE24A
-Schrï¿½ter;Sarah;sarah.schroeter;INF24S;BM1_TE24A
+Schröter;Sarah;sarah.schroeter;INF24S;BM1_TE24A
 Slezinger;Jana;jana.slezinger;DRO25A;
 Sterchi;Leif;leif.sterchi;INF24S;BM1_TE24A
 Wenk;Fabian;fabian.wenk;PKB24A;BM1_TE24A
@@ -13,7 +13,7 @@ Schwab;Pascal;pascal.schwab;PKB24A;BM1_TE24A
 Temporal;Nicola;nicola.temporal;INF24A;BM1_TE24A
 Barbisch;Florin;florin.barbisch;INF24A;BM1_TE24A
 Kamber;Joel;joel.kamber;PKB25A;BM1_TE25A
-Mï¿½ller;Fabio;fabio.mueller;PKB25A;BM1_TE25B
+Müller;Fabio;fabio.mueller;PKB25A;BM1_TE25B
 Misteli;Remo;remo.misteli;INF25B;
 Kehl;Nils;nils.kehl;BM1_TE25B;
 Ziegler;Lars;lars.ziegler;SPE;
@@ -30,16 +30,16 @@ Baumann;Damian;damian.baumann;AUA24A;
 Berki;Kevin;kevin.berki;Ex;
 Bettschen;Nicolas;nicolas.bettschen;BM2_TE25A;
 Bewsher;Kevin;kevin.bewsher;VWB25B;
-Blï¿½lle;Talisa Chiara Rea;talisa.bluelle;VWB24C;
+Blülle;Talisa Chiara Rea;talisa.bluelle;VWB24C;
 Casanova Moure;Carlos;carlos.casanova;VWB24B;
 Chirico;Mattia;mattia.chirico;VWB24C;
 Christen;Carmen;carmen.christen;VWB25A;
 Di Giacinto;Lia;lia.digiacinto;VWB24C;
 Duppenthaler;Leon;leon.duppenthaler;VWB24C;
 Eberhard;Ivan;ivan.eberhard;BM2_TE25B;
-Flï¿½ckiger;Nils;nils.flueckiger;VWB24A;
-Fï¿½rst;Gabriel;gabriel.fuerst;BM2_TE25A;
-Fï¿½rst;Jasmine;jasmine.fuerst;VWB25C;
+Flückiger;Nils;nils.flueckiger;VWB24A;
+Fürst;Gabriel;gabriel.fuerst;BM2_TE25A;
+Fürst;Jasmine;jasmine.fuerst;VWB25C;
 Gadient;Pascal;pascal.gadient;AUA24A;
 Gashi;Ardian;ardian.gashi;AUA24A;
 Halimi;Arta;arta.halimi;VWB25B;
@@ -55,14 +55,14 @@ Nyffeler;Gina;gina.nyffeler;REF25A;
 Orlandi;Elias;elias.orlandi;VWB24B;
 Paurevic;Dario;dario.paurevic;PRM25A;
 Plepel;Raphael;raphael.plepel;BM2_TE25B;
-Schï¿½rli;Jan;jan.schaerli;VWB25C;
+Schärli;Jan;jan.schaerli;VWB25C;
 Schmutz;Leandro Niklas;leandro.schmutz;VWB25A;
 Schranz;Nils;nils.schranz;Ex;
 Stampfli;Gabriel;gabriel.stampfli;Ex;
 Stampfli;Janine;janine.stampfli;;VWB25C
 Steiner;Robin;robin.steiner;VWB25A;
 Suntinger;David;david.suntinger;BM2_TE25A;
-Teamï¿½;Fiori;fiori.teame;INVOL25B;
+Teamé;Fiori;fiori.teame;INVOL25B;
 Vugts;Dennis;dennis.vugts;VWB25B;
 Wyss;Lukas;lukas.wyss3;BM2_TE25B;
 Zolli;Lea;lea.zolli;INF24S;
@@ -80,7 +80,7 @@ Kissling;Sophia;sophia.kissling;BM1_TE15B;
 Kristiansen;Julia;julia.kristiansen;BM1_TE15B;
 Nussbaumer;Matthias;matthias.nussbaumer;VWB25B;
 Ritter;Timo;timo.ritter;BM2_TE25B;
-von Dï¿½niken;Philipp;philipp.vondaeniken;VWB24B;
+von Däniken;Philipp;philipp.vondaeniken;VWB24B;
 Witmer;Yves;yves.witmer;BM2_TE25A;
 Zwahlen;Sven;sven.zwahlen;BM1_TE15B;
 Gasser;Sarah;sarah.gasser;BM1_TE15A;
@@ -88,9 +88,9 @@ Ledergerber;Rahel;rahel.ledergerber;BM1_TE16B;
 Lorenz;Robin;robin.lorenz;BM1_TE15B;
 Moraschini;Michele;michele.moraschini;BM1_TE16B;
 Moser;Marco;marco.moser;BM1_TE16A;
-Mï¿½ller;Luana;luana.mueller2;BM1_TE15A;
+Müller;Luana;luana.mueller2;BM1_TE15A;
 Palm;Leander;leander.palm;BM1_TE15A;
-Rï¿½egger;Aaron;aaron.rueegger;BM1_TE15A BM1_TE15A;
+Rüegger;Aaron;aaron.rueegger;BM1_TE15A BM1_TE15A;
 Steinmann;Naja Lis;najalis.steinmann;BM1_TE15A;
 Stoll;Neal;neal.stoll;BM1_TE16B;
 Abdullahu;Adriatik;adriatik.abdullahu;NPR24A;
@@ -105,7 +105,7 @@ Aerni;Fabienne;fabienne.aerni;DRO16A;
 Aeschlimann;Robin;robin.aeschlimann;INF15A;
 Affolter;Janik;janik.affolter;AUM16A;
 Ahmad Karem;Aram;aram.karem;PKE15A;
-Akcay;Hï¿½seyin;hueseyin.akcay;BM2_TE25A;
+Akcay;Hüseyin;hueseyin.akcay;BM2_TE25A;
 Al Ali;Mohamad Louay;louay.alali;PRM16C;
 Ali;Rana;rana.ali;KOE25A;
 Aliu;Shendrit;shendrit.aliu;PKE15A;
@@ -116,9 +116,9 @@ Apawan;Jeremeah;jeremeah.apawan;AUF16B;
 Arnold;Stefan;stefan.arnold;ELT15A;BM1_TE15A
 Avdili;Driton;driton.avdili;PRM16B;
 Bachmann;Luca;luca.bachmann;INF16A;BM1_TE16B
-Bï¿½r;Ramon;ramon.baer;KOE16B;
+Bär;Ramon;ramon.baer;KOE16B;
 Barrer;Mike;mike.barrer;PMG15A;
-Bï¿½rtschi;Joshua;joshua.baertschi;PMG15A;
+Bärtschi;Joshua;joshua.baertschi;PMG15A;
 Baumann;Marco Luc;marcoluc.baumann;PKE16A;
 Baumann;Sammy;sammy.baumann;AUM16A;
 Baumgartner;Lukas;lukas.baumgartner;AUF16A;
@@ -139,18 +139,18 @@ Boos;Matthias;matthias.boos;INF15S;BM1_TE15A
 Borel;Pascal;pascal.borel;INF15A;BM1_TE15B
 Borer;Larissa;larissa.borer;PMG15B;
 Bosankic;Antonio;antonio.bosankic;INF15A;BM1_TE15A
-Bï¿½sch;Jennifer;jennifer.boesch;DRO16A;
+Bösch;Jennifer;jennifer.boesch;DRO16A;
 Brand;Ramon;ramon.brand;PMG16A;
 Braun;Marcel;marcel.braun;KOE16C;
-Brï¿½gger;Jan;jan.bruegger;KOE16B;
+Brügger;Jan;jan.bruegger;KOE16B;
 Bruttin;Laurent;laurent.bruttin;BM1_TE16A;
 Buchser;Timo;timo.buchser;Ex;
-Bï¿½hler;Rahel;rahel.buehler;BM2_TE25A;
+Bühler;Rahel;rahel.buehler;BM2_TE25A;
 Bui;Hong Nhung Diana;hongnhungdiana.bui;WTG16A;
-Bï¿½rgi;Luana;luana.buergi;REF16A;
+Bürgi;Luana;luana.buergi;REF16A;
 Burgo;Francesco;francesco.burgo;AUF16A;
-Bï¿½ttler;Jan;jan.buettler;PME16A;
-Bï¿½ttler;Lukas;lukas.buettler;KOE16A;
+Büttler;Jan;jan.buettler;PME16A;
+Büttler;Lukas;lukas.buettler;KOE16A;
 Carrel;Michelle;michelle.carrel;REF16A;
 Castro;Leonardo;leonardo.castro;PKB16A;BM1_TE16A
 Celikovic;Asmir;asmir.celikovic;PRM16C;
@@ -165,16 +165,16 @@ D'Amico;Mattia;mattia.damico;AUM15A;
 D'Antoni;Luca;luca.dantoni;PKB15A;BM1_TE15B
 D'Antoni;Nico;nico.dantoni;PKE16A;
 Dasan;Narthana;narthana.dasan;INF16A;BM1_TE16A
-Dï¿½twyler;Benjamin;benjamin.daetwyler;BM2_TE25A;
+Dätwyler;Benjamin;benjamin.daetwyler;BM2_TE25A;
 Dedaj;Pren;pren.dedaj;PRM16A;
 Dedic;David;david.dedic;INF16S;BM1_TE16A
-Derendinger;Cï¿½line;celine.derendinger;KOE16A;
+Derendinger;Céline;celine.derendinger;KOE16A;
 Deutsch;Natalie;natalie.deutsch;WTG16A;
 Diethelm;Michael;michael.diethelm;PMG15A;
 Dietlin;Loris;loris.dietlin;PMG15B;
 Dietschi;Christian;christian.dietschi;PMG15B;
 Djokic;Stefan;stefan.djokic;AUM15A;
-Dï¿½ner;Esna;esna.doener;REF16A;
+Döner;Esna;esna.doener;REF16A;
 D'Onofrio;Livio;livio.donofrio;PMG15B;
 Douch;Khalid;khalid.douch;BM2_TE25A;
 Dreher;Alexandra;alexandra.dreher;REF16B;
@@ -183,7 +183,7 @@ Eichenberger;Gina;gina.eichenberger;PKE15A;
 El Sakakini;Mustapha;mustapha.elsakakini;AUF16A;
 Elezi;Gjelbrim;gjelbrim.elezi;PRM16A;
 Elezi;Qendrim;qendrim.elezi;PRM16C;
-Elsï¿½sser;Alexander;alexander.elsaesser;PMG16B;VWB25C
+Elsässer;Alexander;alexander.elsaesser;PMG16B;VWB25C
 Emmenegger;Rebecca;rebecca.emmenegger;INF16S;BM1_TE16A
 Erken;Ecehan Arife;ecehanarife.erken;INF15A;
 Escurriola;Jan;jan.escurriola;PKE16A;
@@ -201,22 +201,22 @@ Fetija;Halim;halim.fetija;AUF24A;
 Fiechter;Karim;karim.fiechter;PKE15A;
 Fillinger;Alisha;alisha.fillinger;REF16B;
 Fischer;Andrea;andrea.fischer;BM2_TE25B;
-Flï¿½eli;Jonas;jonas.flueeli;AUM16A;
+Flüeli;Jonas;jonas.flueeli;AUM16A;
 Fluri;Jonas;jonas.fluri;PKB15A;BM1_TE15A
 Flury;Jan;jan.flury;PMG15A;
 Flury;Leander;leander.flury;PME16A;VWB25B
 Flury;Sanja;sanja.flury;PME16A;VWB25A
 Fomasi;Michael;michael.fomasi;AUF24A;
-Frï¿½ulin;Fabio;fabio.fraeulin;INF15S;BM1_TE15A
+Fräulin;Fabio;fabio.fraeulin;INF15S;BM1_TE15A
 Freudiger;Jordi;jordi.freudiger;ELT15A;
 Frey;Lucas;lucas.frey;KOE16A;
 Friedli;Cyrill;cyrill.friedli;Ex;
 Friedli;Fabio Maick;fabiomaick.friedli;INF16S;BM1_TE16A
-Fï¿½eg;Cï¿½line;celine.fueeg;AUF16B;
+Füeg;Céline;celine.fueeg;AUF16B;
 Fuhrer;Jarno;jarno.fuhrer;KOE16A;
 Furrer;Livio;livio.furrer;AUM16A;VWB25A
-Fï¿½rst;Christian;christian.fuerst;INF16A;
-Fï¿½rst;Kevin;kevin.fuerst;KOE16A;
+Fürst;Christian;christian.fuerst;INF16A;
+Fürst;Kevin;kevin.fuerst;KOE16A;
 Gaberell;Patrik;patrikanton.gaberell;PKE15A;
 Galli;Jerome;jerome.galli;PKE15A;
 Gambardelli;Alessandro;alessandro.gambardelli;PRM16A;
@@ -243,17 +243,17 @@ Grolimund;Simon;simon.grolimund;AUM15A;
 Grotti;Anicia;anicia.grotti;DRO16A;
 Gschwind;Darius;darius.gschwind;PRM16A;
 Guldimann;Andrin;andrin.guldimann;REF16B;
-Gï¿½nther;Cï¿½dric;cedric.guenther;PRM24B;
+Günther;Cédric;cedric.guenther;PRM24B;
 Gutmann;Nick;nick.gutmann;PMG16A;VWB25B
 Habegger;Sven;sven.habegger;AUF16B;
 Haefeli;Larissa Selina;larissa.haefeli;KOE24A;
 Haefeli;Nicolas Yves;nicolasyves.haefeli;INF16S;
-Hï¿½feli;Robin;robin.haefeli;PRM16A;
+Häfeli;Robin;robin.haefeli;PRM16A;
 Hafner;Noemi;noemi.hafner;PKE16A;
 Hagmann;Virgile;virgile.hagmann;BM2_TE25B;
 Haldi;Alain;alain.haldi;PME16A;VWB25A
 Haller;Samuel;samuel.haller;REF16A;
-Hï¿½nzi;Fabian;fabian.haenzi;PKB15A;BM1_TE15A
+Hänzi;Fabian;fabian.haenzi;PKB15A;BM1_TE15A
 Hardmeier;Annina;annina.hardmeier;WTG16A;
 Hasho;Filmawit;filmawit.hasho;IJBV25C;
 Hassen;Nema;nema.hassen;KUA24A;
@@ -265,17 +265,17 @@ Herrmann;Nico;nico.herrmann;INF16S;
 Herzig;Jason;jason.herzig;PRM16A;
 Herzog;Luana;luana.herzog;INF16S;
 Hess;Mike;mike.hess;AUF16B;
-Hesse;Lï¿½on;leon.hesse;DRO15A;
+Hesse;Léon;leon.hesse;DRO15A;
 Hirschi;Jeremy Luca;jeremyluca.hirschi;PMG16A;
 Hubler;Lorenz;lorenz.hubler;PKE16A;VWB25A
-Hï¿½gli;Jill;jill.huegli;WTG16A;
+Hügli;Jill;jill.huegli;WTG16A;
 Huguenin;Tom;tom.huguenin;PRM16A;
 Hummel;Joris;joris.hummel;PME16A;VWB25C
 Huser;Janis;janis.huser;INF16S;BM1_TE16A
 Ibrahim;Mensur;mensur.ibrahim;KUA25A;
 Ingold;Elias;elias.ingold2;INF16A;BM1_TE16B
 Isovic;Selman;selman.isovic;PRM16A;
-Jï¿½ggi;Joel;joel.jaeggi;PKE15A;
+Jäggi;Joel;joel.jaeggi;PKE15A;
 Jakob;Gian;gian.jakob;AUM15A;
 Javet;Joel;joel.javet;AUF16A;
 Jedrinovic;Luka;luka.jedrinovic;PMG16A;
@@ -283,17 +283,17 @@ Jeirasa;Amirtharaj;amirtharaj.jeirasa;PRM16B;
 Jeker;Amanda;amanda.jeker;DRO16A;
 Jeker;Patric;patric.jeker;INF15S;
 Jetzer;Michael;michael.jetzer;PMG15B;
-Jï¿½hr;Nicola;nicola.joehr;PRM16C;
+Jöhr;Nicola;nicola.joehr;PRM16C;
 Jordi;Ruben;ruben.jordi;KOE16B;
-Jï¿½ri;Samuel;samuel.joeri;PKE15A;
+Jöri;Samuel;samuel.joeri;PKE15A;
 Jost;Tom;tom.jost;KOE16B;
 Jovanovic;Stefan;stefan.jovanovic;PMG16A;
 Jozic;Ivana;ivana.jozic;REF16A;
 Jusufi;Fahir;fahir.jusufi;PME16A;VWB25B
-Jï¿½ttner;Neil Jan;neiljan.juettner;AUM16A;
+Jüttner;Neil Jan;neiljan.juettner;AUM16A;
 Kahlert;Christian;christian.kahlert;PMG16A;
 Kaiser;Iris;iris.kaiser;DRO15A;
-Kï¿½ppeli;Chiara;chiara.kaeppeli;DRO16A;
+Käppeli;Chiara;chiara.kaeppeli;DRO16A;
 Kappler;Laura;laura.kappler;REF16A;
 Karabas;Aykut;aykut.karabas;PRM16B;
 Karabasic;Benjamin;benjamin.karabasic;PMG16A;
@@ -317,13 +317,13 @@ Kozejeva;Vlada;vlada.kozejeva;REF16B;
 Kqira;Kaltrina;kaltrina.kqira;REF16A;
 Kradolfer;Pascal;pascal.kradolfer;PMG15A;VWB24A
 Kuhn;Gabriel;gabriel.kuhn;INF16S;
-Kï¿½nzi;Cï¿½dric;cedric.kuenzi2;BM1_TE15B;
+Künzi;Cédric;cedric.kuenzi2;BM1_TE15B;
 Kureth;Chris;chris.kureth;PKE15A;
 Kurth;Janick;janick.kurth;BM2_TE25B;
-Lï¿½ng;Janick;janick.laeng;INF16B;
+Läng;Janick;janick.laeng;INF16B;
 Lankanesan;Nehemiah;nehemiah.lankanesan;PRM16A;
 Lanz;Franco;franco.lanz;AUM16A;
-Lanz;Yves Andrï¿½;yvesandre.lanz;PRM16C;
+Lanz;Yves André;yvesandre.lanz;PRM16C;
 Lauber;Christof;christof.lauber;KOE16C;
 Lehmann;Tamara;tamara.lehmann;DRO15A;
 Leu;Julian;julian.leu;PKB15A;BM1_TE15A
@@ -339,13 +339,13 @@ Looser;Dario;dario.looser;PMG15A;
 Loseni;Christian;christian.loseni;KOE16B;
 Louridi;Hasnae;hasnae.louridi;KOE24A;
 Lovedoreal;Jasper;jasper.lovedoreal;PRM16A;VWB24B
-Ludï¿½scher;Sonja;sonja.ludaescher;DRO15A;
-Lï¿½scher;Leandra;leandra.luescher;DRO16A;VWB25C
+Ludäscher;Sonja;sonja.ludaescher;DRO15A;
+Lüscher;Leandra;leandra.luescher;DRO16A;VWB25C
 Lushaj;Shkelqim;shkelqim.lushaj;PRM16C;
 Luterbacher;Fiona;fiona.luterbacher;DRO16A;
-Lï¿½thi;Kevin;kevin.luethi;AUF16B;
-Lï¿½thi;Mike;mike.luethi;PMG16A;VWB25A
-Lï¿½thi;Patrick;patrick.luethi;Ex;
+Lüthi;Kevin;kevin.luethi;AUF16B;
+Lüthi;Mike;mike.luethi;PMG16A;VWB25A
+Lüthi;Patrick;patrick.luethi;Ex;
 Mahmuti;Adem;adem.mahmuti;PRM16B;
 Markovic;Aleksandar;aleksandar.markovic;PKE15A;VWB24B
 Markovic;Dragan;dragan.markovic;AUF16B;
@@ -356,7 +356,7 @@ Marti;Simon;simon.marti;INF15S;
 Martinez CobeÃ±as;Sandra;sandra.martinez;REF24A;
 Matic;Klaudia;klaudia.matic;PMG15B;
 Mebrahtom;Kahase;kahase.mebrahtom;IJBV25C;
-Meier;Cï¿½line;celine.meier;PKB15A;BM1_TE15B
+Meier;Céline;celine.meier;PKB15A;BM1_TE15B
 Meier;Jocelyn;jocelyn.meier;WTG16A;
 Meier;Justin;justin.meier;AUM16A;
 Meister;Manuel;manuel.meister;PKE15A;
@@ -369,11 +369,11 @@ Morina;Medina;medina.morina;KOE24B;
 Moser;Aron;aron.moser;KOE16C;
 Moser;Daniel;daniel.moser;ELT15A;BM1_TE15B
 Moser;Robin;robin.moser;PRM16B;
-Mï¿½hlheim;Dominique;dominique.muehlheim;PRM16C;
-Mï¿½ller;Alina;alina.mueller;AUM15A;
-Mï¿½ller;Philip Hans;philiphans.mueller;PMG16A;
-Mï¿½ller;Timon;timon.mueller;AUM16A;
-Mï¿½nger;Michelle;michelle.muenger;DRO15A;
+Mühlheim;Dominique;dominique.muehlheim;PRM16C;
+Müller;Alina;alina.mueller;AUM15A;
+Müller;Philip Hans;philiphans.mueller;PMG16A;
+Müller;Timon;timon.mueller;AUM16A;
+Münger;Michelle;michelle.muenger;DRO15A;
 Musiqi;Gentrit;gentrit.musiqi;PRM16B;
 Mustafa;Ahmed;ahmed.mustafa;BM2_TE25B;
 Mustafa;Deniz;deniz.mustafa;PMG16B;
@@ -381,7 +381,7 @@ Mustafi;Albin;albin.mustafi;AUF16B;
 Naue;Lisa;lisa.naue;DRO15A;
 Neukomm;Sabrina Nadja;sabrinanadja.neukomm;DRO16A;
 Niederberger;Melissa;melissa.niederberger;DRO16A;
-Niemelï¿½;Jonathan;jonathan.niemelae;INF15S;BM1_TE15B
+Niemelä;Jonathan;jonathan.niemelae;INF15S;BM1_TE15B
 Nobs;Elias;elias.nobs;PRM16C;
 Nordmann;Til;til.nordmann;KOE16C;
 Nussbaumer;Larissa;larissa.nussbaumer;REF16A;
@@ -404,7 +404,7 @@ Paz Formoso;Ivan;ivan.pazformoso;PRM16C;
 Pearson;Michael;michael.pearson;PME16A;
 Peier;Leonie;leonie.peier;DRO16A;
 Penthai;Jirawat;jirawat.penthai;KOE24B;
-Niffenegger;Salomï¿½;salome.peter;WTG16A;
+Niffenegger;Salomé;salome.peter;WTG16A;
 Peterhans;Alex;alex.peterhans;AUF16B;
 Pfeiffer;Adrian German Andreas;adrian.pfeiffer;PKB16A;BM1_TE16B
 Pieber;Dario;dario.pieber;BM2_TE25B;
@@ -427,10 +427,10 @@ Riedwyl;Lorena Nadine;lorenanadine.riedwyl;DRO15A;
 Rindlisbacher;Joel;joel.rindlisbacher;PKB16A;BM1_TE16A
 Rohde;Jan;jan.rohde;AUM16A;
 Rohner;Sascha;sascha.rohner;INF15S;
-Rï¿½ï¿½sli;Mike;mike.roeoesli;KOE16C;
+Röösli;Mike;mike.roeoesli;KOE16C;
 Roschi;Lukas;lukas.roschi;PRM24B;
 Roth;Luca;luca.roth;AUM16A;
-Rï¿½theli;Christoph;christoph.roetheli;PMG16B;
+Rötheli;Christoph;christoph.roetheli;PMG16B;
 Rothermann;Leon;leon.rothermann;PME16A;
 Rubino;Gianluca;gianluca.rubino;PRM16B;VWB24C
 Ruef;NoÃ«mi Laura;noemilaura.ruef;REF16B;
@@ -446,9 +446,9 @@ Samoel;Maximilian;maximilian.samoel;INF15S;
 Sari;Kaan Can;kaancan.sari;PMG15A;
 Satkunam;Justina;justina.satkunam;KOE16B;
 Schaad;Yannis;yannis.schaad;PRM16B;
-Schaller;Eric Renï¿½;ericrene.schaller;AUM16A;VWB25B
+Schaller;Eric René;ericrene.schaller;AUM16A;VWB25B
 Schaller;Miguel;miguel.schaller;INF15B;VWB24B
-Schï¿½rer;Robin;robin.schaerer;PMG15B;
+Schärer;Robin;robin.schaerer;PMG15B;
 Schenk;Raphael;raphael.schenk;PMG16A;
 Schild;David;david.schild;PKB16A;BM1_TE16B
 Schluep;Sarah;sarah.schluep;KOE16B;
@@ -458,13 +458,13 @@ Schmidt;Tobias;tobias.schmidt;PMG15B;
 Schneeberger;Ronny;ronny.schneeberger;PKB15A;BM1_TE15A
 Schneider;Kevin;kevin.schneider2;PME16A;VWB25C
 Scholl;Patrick;patrick.scholl;PMG15A;VWB24B
-Schï¿½nbï¿½chler;Nico;nico.schoenbaechler;INF15B;
-Schï¿½nmann;Claudio;claudio.schoenmann;KOE16A;
-Schï¿½pfer;Anja;anja.schoepfer;Ex;
-Schï¿½pbach;Mischa;mischa.schuepbach;KOE16B;
+Schönbächler;Nico;nico.schoenbaechler;INF15B;
+Schönmann;Claudio;claudio.schoenmann;KOE16A;
+Schöpfer;Anja;anja.schoepfer;Ex;
+Schüpbach;Mischa;mischa.schuepbach;KOE16B;
 Schuricht;Justin;justin.schuricht;AUM15A;
 Schurtenberger;Tim;tim.schurtenberger;INF15B;BM1_TE15A
-Schï¿½tz;Mario;mario.schuetz;PKE15A;VWB24C
+Schütz;Mario;mario.schuetz;PKE15A;VWB24C
 Schwaller;Robin;robin.schwaller;INF16S;BM1_TE16B
 Schwarzentrub;Jannick;jannick.schwarzentrub;KOE16C;
 Selen;Alican;alican.selen;PRM16C;
@@ -482,7 +482,7 @@ Sljivic;Oliver;oliver.sljivic;PRM16C;
 Soares;Sofia;sofia.soares;DRO16A;
 Solanella;Julian;julian.solanella;KOE16B;
 Soledade;Barbara;barbara.soledade;DRO16A;
-Spï¿½ni;Leon;leon.spaeni;INF16A;
+Späni;Leon;leon.spaeni;INF16A;
 Spoya;Dominique;dominique.spoya;INF15A;BM1_TE15B
 Srijanagakumar;Jalasan;jalasan.srijanagakum;PMG16B;
 Stalder;Janis;janis.stalder;AUF16A;
@@ -492,7 +492,7 @@ Steiner;Mel;mel.steiner;INF16S;BM1_TE16B
 Steiner;Nick;nick.steiner;INF16S;
 Steinlechner;Jan;jan.steinlechner;PRM24B;
 Stjepanovic;Anita;anita.stjepanovic;KOE16A;
-Stï¿½ckli Malavï¿½;Axel Sebastian;axel.stoeckli;PME16A;VWB25A
+Stöckli Malavé;Axel Sebastian;axel.stoeckli;PME16A;VWB25A
 Straumann;Roman;roman.straumann;PMG15A;VWB24B
 Strebel;Niels;niels.strebel;PRM25B;
 Streuli;Cedric JoÃ«l;cedricjoel.streuli;AUF16A;
@@ -508,7 +508,7 @@ Tamsel;Tim;tim.tamsel;INF15A;BM1_TE15A
 Tasic;Kristian;kristian.tasic;AUF16B;
 Tesfai;Meron;meron.tesfai;PMG16B;
 Thavakumar;Venujan;venujan.thavakumar;PMG15B;
-Theiler;Cï¿½dric;cedric.theiler;KOE16B;
+Theiler;Cédric;cedric.theiler;KOE16B;
 Thi;Wai Xing;waixing.thi;PMG16B;
 Thi;Wai-Kin;waikin.thi;BM2_TE25A;
 Tonini;Elias;elias.tonini;INF15B;
@@ -541,24 +541,24 @@ von Arx;Silas;silas.vonarx;PRM16B;
 von Arx;Lukas;lukas.vonarx;PRM24A;
 von Ballmoos;Reto;reto.vonballmoos;PME16A;VWB25C
 von Burg;Manuel;manuel.vonburg;PKE16A;VWB25A
-von Dï¿½niken;Corina;corina.vondaeniken;AUM15A;BM1_TE15A
+von Däniken;Corina;corina.vondaeniken;AUM15A;BM1_TE15A
 von Gunten;Melissa;melissa.vongunten;WTG16A;
-Wï¿½fler;Thomas;thomas.waefler;AUF16B;
+Wäfler;Thomas;thomas.waefler;AUF16B;
 Wanner;Adrian;adrian.wanner;PMG15A;
 Weber;Andreas;andreas-weber;PKB15A;BM1_TE15A
 Weber;Cedric;cedric.weber;AUF16A;
 Weber;Diana;diana.weber;REF24A;
 Weber;Jannik;jannik.weber;PMG16B;
-Wegmï¿½ller;Nicole;nicole.wegmueller;AUF16A;
+Wegmüller;Nicole;nicole.wegmueller;AUF16A;
 Wethli;Denis;denis.wethli;AUF16B;
 Wick;Silvan;silvan.wick;PKE15A;
 Wiesmann;Daniel;daniel.wiesmann;KOE16B;
-Winistï¿½rfer;Fabian;fabian.winistoerfer;PKB15A;BM1_TE15B
-Winistï¿½rfer;Nina;nina.winistoerfer;DRO16A;
+Winistörfer;Fabian;fabian.winistoerfer;PKB15A;BM1_TE15B
+Winistörfer;Nina;nina.winistoerfer;DRO16A;
 Wirz;Alexander;alexander.wirz;PKB16A;BM1_TE16B
 Wirz;Sharon;sharon.wirz;DRO15A;
 Wittwer;Livia;livia.wittwer;AUF16B;VWB24C
-Wï¿½est;Luca;luca.wueest;PMG15A;
+Wüest;Luca;luca.wueest;PMG15A;
 Wyss;Emanuel;emanuel.wyss;PMG16A;
 Wyss;Joelyn;joelyn.wyss;WTG16A;
 Wyss;Julian;julian.wyss3;PMG15A;
@@ -582,29 +582,29 @@ Zumtaugwald;Joel;joel.zumtaugwald;PKE16A;
 Grimm;Filomena;filomena.grimm;VWB25C;
 Werlen;Wieland;wieland.werlen;BM1_TE24A;
 Markwalder;Leon;leon.markwalder;BM1_TE24A;
-Knï¿½rr;Jonas;jonas.knoerr;AUF25A;
+Knörr;Jonas;jonas.knoerr;AUF25A;
 Cayir;Cemal;cemal.cayir;NPR24A;
 Bertonazzi;Luca;luca.bertonazzi;INF24A;BM1_TE24A
-Kï¿½mpfer;Dominik;dominik.kaempfer;AUF24A;
+Kämpfer;Dominik;dominik.kaempfer;AUF24A;
 Ackermann;Eric Jan;eric.ackermann;AUM24A;
 Antener;Simon;simon.antener;PKE24A;
 Friedli;Michelle;michelle.friedli;DRO24A;
 Ziegler;Michael;michael.ziegler;AUF24A;
 Temmel;Jeremy;jeremy.temmel;PMG24B;
-Rï¿½ss;Dimitri;dimitri.raess;INF24A;
+Räss;Dimitri;dimitri.raess;INF24A;
 Ierano;Gabriele;gabriele.ierano;INF24A;
 Niederhauser;Jan;jan.niederhauser;INF24S;
 Sae-Wang;Jakkrapat;jakkrapat.sae-wang;PMG24A;
 Winterberg;Joel;joel.winterberg;PME24A;
 Vicari;Loris;loris.vicari;MPR24A;
 Moser;Ramon;ramon.moser;PRM24A;
-Kï¿½lliker;Sandro;sandro.koelliker;AUF24A;
+Kölliker;Sandro;sandro.koelliker;AUF24A;
 Eren;Furkan;furkan.eren;PME24A;
 Gust;Ramon;ramon.gust;PKE24A;
 Steinegger;Jenny;jenny.steinegger;REF16A;
 Bruschi;Natalie;natalie.bruschi;KOE24B;
-Ambï¿½hl;Yanik;yanik.ambuehl;PME24A;
-Rï¿½egsegger;Matthias;matthias.rueegsegger;PMG24A;
+Ambühl;Yanik;yanik.ambuehl;PME24A;
+Rüegsegger;Matthias;matthias.rueegsegger;PMG24A;
 Signer;Samuel;samuel.signer;INF24B;
 Weickhardt;Christof Tobias;christoftobias.weickhardt;INF24A;BM1_TE24A
 Roth;Danielle;danielle.roth;KOE24A;
@@ -634,13 +634,13 @@ Fuhrer;Benj;benj.fuhrer;PMG24A;
 Ongarabalan;Anusha;anusha.ongarabalan;DRO24A;
 Holliger;Marc;marc.holliger;PKE24A;
 Glauser;Luca;luca.glauser;AUM24A;
-Jï¿½ggi;Lukas;lukas.jaeggi2;Ex;Ex
-Brï¿½ndle;Noah;noah.braendle;INF24S;
+Jäggi;Lukas;lukas.jaeggi2;Ex;Ex
+Brändle;Noah;noah.braendle;INF24S;
 Krebs;Lars;lars.krebs;PKE24A;
 Kasser;Manuel;manuel.kasser;PKE24A;
 Dobler;Sven;sven.dobler;KOE24A;
 Petrovic;Aleksandar;aleksandar.petrovic;PME24A;
-Schï¿½pfer;Micha;micha.schoepfer;PME24A;
+Schöpfer;Micha;micha.schoepfer;PME24A;
 Scire;Alessio;alessio.scire;PRM24B;
 Pulfer;Soraya;soraya.pulfer;REF24A;
 Simic;Teo;teo.simic;PMG24B;
@@ -648,7 +648,7 @@ Henchoz;Noah;noah.henchoz;PKB24A;BM1_TE24A
 Kozlu;Ilayda;ilayda.kozlu;INF24S;
 Vuille;Joel David;joeldavid.vuille;INF24S;
 Ferati;Naim;naim.ferati;PRM24A;
-Mï¿½ller;Jonas;jonas.mueller;PKE24A;
+Müller;Jonas;jonas.mueller;PKE24A;
 Kaufmann;Mike;mike.kaufmann;PKE24A;
 Mollet;Lars;lars.mollet;PRM24A;
 Rothermann;Alicia;alicia.rothermann;PME24A;
@@ -663,7 +663,7 @@ Kasanga;Daniel;daniel.kasanga;PME24A;
 Cansu;Hendrik;hendrik.cansu;PMG24B;
 Zumofen;Janina;janina.zumofen;AUM24A;
 Leimer;Florian;florian.leimer;INF24A;
-Kï¿½cï¿½k;Ertugrul;ertugrul.kuecuek;PRM24B;
+Kücük;Ertugrul;ertugrul.kuecuek;PRM24B;
 Serratore;Alex;alex.serratore;PME24A;
 Cascio;Pietro;pietro.cascio;PRM24A;
 Palermo;Mattia;mattia.palermo;PRM24B;
@@ -683,8 +683,8 @@ Reichhart;Christopher;christopher.reichhart;AUF24A;
 Zbinden;Silas;silas.zbinden;REF24A;
 Gfeller;Jessica;jessica.gfeller;DRO24A;
 Brudermann;Thomas;thomas.brudermann;AUM24A;
-Wernle;Eliï¿½cer;eliecer.wernle;AUM24A;
-Sï¿½gesser;Fabrice;fabrice.saegesser;AUF24A;
+Wernle;Eliécer;eliecer.wernle;AUM24A;
+Sägesser;Fabrice;fabrice.saegesser;AUF24A;
 Flury;Lars;lars.flury;INF24A;
 Thamilselvan;Kirusaath;kirusaath.thamilselvan;PRM24B;
 Boukhris;Yakob;yakob.boukhris;PMG24B;
@@ -704,7 +704,7 @@ Pasil Trimosan Manohar;Devonsan;devonsan.manohar;PRM24A;
 Nica;Gian Luca;gianluca.nica;INF24S;
 Amorosi;Laura;laura.amorosi;VWB24A;
 Anton;Selina;selina.anton;REF25A;
-Bï¿½rlocher;Laura;laura.baerlocher;VWB24B;
+Bärlocher;Laura;laura.baerlocher;VWB24B;
 Di Pietro;Sandro;sandro.dipietro;VWB24B;
 Fedeli;Ramona;ramona.fedeli;VWB24B;
 Furfaro;Cristina;cristina.furfaro;VWB25B;
@@ -712,16 +712,16 @@ Lehmann;Luisa;luisa.lehmann;VWB24A;
 Maurer;Andrea;andrea.maurer;VWB24B;
 Ochsenbein;Chiara;chiara.ochsenbein;VWB24C;
 Ryf;Marina;marina.ryf;VWB24A;
-Schlï¿½fli;Martina;martina.schlaefli;VWB24A;
-Schrï¿½mmli;Denise;denise.schraemmli;VWB24C;
+Schläfli;Martina;martina.schlaefli;VWB24A;
+Schrämmli;Denise;denise.schraemmli;VWB24C;
 Stampfli;Romy;romy.stampfli;VWB24C;
 Stankovic;Laura;laura.stankovic;VWB24B;
 Zanin;Noemi;noemi.zanin;VWB24A;
 Demos;Beteal;beteal.demos;REA25A;
-Stï¿½hli;Nina Elena;nina.staehli;REF25A;
+Stähli;Nina Elena;nina.staehli;REF25A;
 Sudic;Petar;petar.sudic;AUF25B;
 Tesfamichael;Aman;aman.tesfamichael;IJBV25B;
-Dï¿½gï¿½nyurdu;Onur;onur.dueguenyurdu;PME24A;
+Dügünyurdu;Onur;onur.dueguenyurdu;PME24A;
 Haxhimehmeti;Argjent;argjent.haxhimehti;PMG24B;
 Baumann;Fabienne;fabienne.baumann;DRO24A;
 Kohler;Jonathan;jonathan.kohler;AUF24A;
@@ -740,18 +740,18 @@ Felber;Janina;janina.felber;VWB25B;
 Zwygart;Yasmin;yasmin.zwygart;VWB25C;
 Kissling;Rahel;rahel.kissling;VWB25A;
 Kaqinari;Patrik;patrik.kaqinari;PRM16B;
-Yï¿½rek;Alena;alena.yoerek;INF24S;
+Yörek;Alena;alena.yoerek;INF24S;
 Aliu;Duan;duan.aliu;PRM24B;
 Klafsky;Luca;luca.klafsky;AUM24A;
 Mariotto;Manuel;manuel.mariotto;REF25A;
 Falone;Alessia;alessia.falone;SPE;
 Buser;Fiona;fiona.buser;SPE;
-Brï¿½derli;Lucas;lucas.bruederli;SPE;
-Zï¿½rcher;Gioia;gioia.zuercher;SPE;
+Brüderli;Lucas;lucas.bruederli;SPE;
+Zürcher;Gioia;gioia.zuercher;SPE;
 Bordi;Noemi;noemi.bordi;SPE;
 Ritter;Lena;lena.ritter;SPE;
 Berber;Aleyna;aleyna.berber;SPE;
-Rï¿½thlisberger;Nina Leonie;nina.roethlisberger;SPE;
+Röthlisberger;Nina Leonie;nina.roethlisberger;SPE;
 Sabedini;Albiona;albiona.sabedini;SPE;
 Pierandrei;Federica;federica.pierandrei;SPE;
 Dinh;Trong Hieu Jimmy;tronghieujimmy.dinh;SPE;
@@ -764,23 +764,23 @@ Zaid;Evenezer;evenezer.zaid;PKB24A;BM1_TE24A
 Rasalingam;Denisan;denisan.rasalingam;REF24A;
 Idrizi;Edona;edona.idrizi;SPE;
 Winzer;Jasmin;jasmin.winzer;AUM24A;
-Bï¿½chler;Kilian;kilian.baechler;AUM24A;
+Bächler;Kilian;kilian.baechler;AUM24A;
 Saciri;Fitim;fitim.saciri;AUF24A;VWB25B
 Suber;Nino Torsten;ninotorsten.suber;PRM24B;
 Neuenschwander;Soraya;soraya.neuenschwander;REF24A;
 Jegatheswaran;Abishan;abishan.jegatheswaran;PMG24A;
 Alviano;Giulia;giulia.alviano;DRO24A;
-Flï¿½ckiger;Henrik;henrik.flueckiger;KOE24A;
+Flückiger;Henrik;henrik.flueckiger;KOE24A;
 Lisser;Markus;markus.lisser;AUM24A;
 Siegenthaler;Alina;alina.siegenthaler;SPE;
 Basar;Melisa;melisa.basar;SPE;
 Stauber;Simon;simon.stauber;INF25B;BM1_TE25B
-Blaser;Bjï¿½rn;bjoern.blaser;AUF24A;
+Blaser;Björn;bjoern.blaser;AUF24A;
 Gamba;Raphael Andrea;raphaelandrea.gamba;INF24S;
 Kabashi;Albrim;albrim.kabashi;PRM24B;
 Wyss;Gian Andri;gianandri.wyss;PMG24A;
 Schwenter;Simon;simon.schwenter;PMG24A;
-Hï¿½nggi;JoÃ«l Nicolas;joel.haenggi;PRM24A;
+Hänggi;JoÃ«l Nicolas;joel.haenggi;PRM24A;
 Duraku;Albin;albin.duraku;PMG24A;
 Sadiku;Endrit;endrit.sadiku;PRM24A;
 Oesch;Nadine;nadine.oesch;KOE24B;
@@ -788,15 +788,15 @@ Meyer;Dario;dario.meyer;AUF24A;
 Pochelon;Leon;leon.pochelon;PMG24A;
 Weber;Samira;samira.weber;AUF24A;
 Berger;Luca;luca.berger;AUA24A;
-Rï¿½egg;Sabrina;sabrina.rueegg;WTG16A;
+Rüegg;Sabrina;sabrina.rueegg;WTG16A;
 Duncan;Alina;alina.duncan;WTG24A;
 Kopp;Luana;luana.kopp;SPE;
 Joss;Judith;judith.joss;REF16A;
 Mosimann;Mike;mike.mosimann;AUF16B;
 Leuenberger;Mirjam;mirjam.leuenberger;VWB24A;
-Flï¿½kiger;Emilie;emilie.fluekiger;VWB24A;
+Flükiger;Emilie;emilie.fluekiger;VWB24A;
 Sulejmani;Burim;burim.sulejmani;BM2_TE25A;
-Thï¿½ring;Manuel;manuel.thuering;BM2_TE25B;
+Thüring;Manuel;manuel.thuering;BM2_TE25B;
 Mattiello;Gianni;gianni.mattiello;KOE24A;
 Qorrolli;Bleon;bleon.qorrolli;PRM24A;
 Shatrolli;Edmond;edmond.shatrolli;MPR24A;
@@ -804,7 +804,7 @@ Mitric;Stefan;stefan.mitric;PRM24A;
 Anga;Khandro;khandro.anga;REA24A;
 Eng;Sven;sven.eng;PRM24A;
 Dornbierer;Patrick;patrick.dornbierer;PME24A;
-Jï¿½ggi;Tanja;tanja.jaeggi;DRO24A;
+Jäggi;Tanja;tanja.jaeggi;DRO24A;
 Schmid;Noel;noel.schmid;VWB25C;
 Demirkaya;Severyus;severyus.demirkaya;Ex;
 Shah;Shayan Navaid;shayannavaid.shah;AUA24A;
@@ -831,7 +831,7 @@ Bruderer;Felix;felix.bruderer;BM2_TE25A;
 Ndawele;Kelly;kelly.ndawele;BM2_TE25B;
 Rippstein;Simon;simon.rippstein;AUF24A;
 Krasniqi;Erjon;erjon.krasniqi;PRM24A;
-Bï¿½chel;Max;max.buechel;PME24A;
+Büchel;Max;max.buechel;PME24A;
 Hirschi;Gabriel;gabriel.hirschi;PME24A;
 Cankalp;Emanuel Jona;emanueljona.cankalp;PRM24A;
 Kadrija;Bashkim;bashkim.kadrija;AUF25B;
@@ -844,20 +844,20 @@ Rebollo;Gabriele;gabriele.rebollo;AUA24A;
 Fejzuli;Kaltrin;kaltrin.fejzuli;PKE24A;
 Faraci;Adriana;adriana.faraci;INF24A;
 Navaratnam;Saseetharan;saseetharan.navaratnam;KOE24A;
-Lï¿½thi;Jannik;jannik.luethi;PME24A;
+Lüthi;Jannik;jannik.luethi;PME24A;
 Yussef;Mouhamed;mouhamed.yussef;AUA24A;
 Elshani;Lorik;lorik.elshani;AUM24A;BM1_TE24A
 Nussbaumer;Jasmine;jasmine.nussbaumer;VWB25A;
-Schï¿½rch;Alexander;alexander.schuerch;PKE24A;
+Schürch;Alexander;alexander.schuerch;PKE24A;
 Savic;Nikola;nikola.savic;PMG24A;
 Naef;Elia;elia.naef;VWB25C;
 Schnabel;Daniel;daniel.schnabel;KOE24B;
 von Rohr;Mirja;mirja.vonrohr;DRO24A;
 Wyss;Kim;kim.wyss;KUA24A;
 Felber;Sandro;sandro.felber;AUM16A;VWB25C
-Breitschï¿½del;Janina;janina.breitschaedel;Ex;
+Breitschädel;Janina;janina.breitschaedel;Ex;
 Meyer;Michelle;michelle.meyer;DRO24A;
-von Niederhï¿½usern;Julian;julian.vonniederhaeusern;PME24A;
+von Niederhäusern;Julian;julian.vonniederhaeusern;PME24A;
 Safari;Hammas;hammas.safari;AUA24A;
 Ulayyan;Rasslan Jonas;rasslanjonas.ulayyan;PRM24B;
 Gass;Dominic;dominic.gass;PRM24B;
@@ -885,7 +885,7 @@ Bufalino;Giuliano;giuliano.bufalino;KOE24A;
 Wernli;Benita;benita.wernli;KOE16C;
 Sen;Metin;metin.sen;NPR16A;
 Baltisberger;Janik;janik.baltisberger;AUM24A;
-Mï¿½gli;Christophe;christophe.maegli;PKE24A;
+Mägli;Christophe;christophe.maegli;PKE24A;
 Kalbermatter;NoÃ«l;noel.kalbermatter;AUF24A;
 Peruzzini;Julia;julia.peruzzini;DBA24A;
 Galarosa;Christian;christian.galarosa;REA24A;
@@ -924,7 +924,7 @@ Mazziotti;Dario;dario.mazziotti;MPR25A;
 Ritter;Sascha;sascha.ritter;BM2_TE25A;
 van den Heuvel;Jan;jan.vandenheuvel;INF25A;
 Dogan;Kaan Salih;kaansalih.dogan;PRM24A;
-Mï¿½ller;Nicolas Sven;nicolassven.mueller;PKB24A;BM1_TE24A
+Müller;Nicolas Sven;nicolassven.mueller;PKB24A;BM1_TE24A
 Kindler;Timon;timon.kindler;INF24A;
 Steiner;Fabian;fabian.steiner;KOE24A;
 Shan;Vaamanan;vaamanan.shan;SPE;
@@ -937,22 +937,22 @@ De Pascali;Damiano;damiano.depascali;AUF24A;
 Attanasio;Giulia;giulia.attanasio;REF24A;VWB25C
 Xhema;Flamur;flamur.xhema;AUF24A;
 Jakupovic;Sara;sara.jakupovic;VWB24B;
-Schï¿½fer;Josefine;josefine.schaefer;VWB24A;
+Schäfer;Josefine;josefine.schaefer;VWB24A;
 Idrizi;Edita;edita.idrizi;VWB24B;
-Polat;Rï¿½meysa;ruemeysa.polat;WTG24A;
+Polat;Rümeysa;ruemeysa.polat;WTG24A;
 Knezevic;Milenko;milenko.knezevic;KUA24A;
 Willi;Adrian;adrian.willi;VWB24C;
 Grogg;Roman Alexander;roman.grogg;MPR25A;
 Schlittler;Maxime;maxime.schlittler;KUA25A;
-Lï¿½thy;Alan;alan.luethy;PMG24A;
-Lï¿½rner;Nathan;nathan.loerner;Ex;
+Lüthy;Alan;alan.luethy;PMG24A;
+Lörner;Nathan;nathan.loerner;Ex;
 Zera;Abel;abel.zera;RPR24A;
 Gegaj;Domenik;domenik.gegaj;AUA24A;
 Berisha;Blerti;blerti.berisha;INF24B;BM1_TE24A
 Russo;Tony;tony.russo;PME16A;VWB25B
 Parlak;Tugrul;tugrul.parlak;AUF24A;
 Abdulsammad;Mohammad;mohammad.abdulsammad;IJBV25C;
-Winistï¿½rfer;Niklas;niklas.winistoerfer;VWB24C;
+Winistörfer;Niklas;niklas.winistoerfer;VWB24C;
 Lebus-Ritter;John Loic;johnloic.lebus-ritter;Ex;
 Paci;Alessio;alessio.paci;RPR24A;
 Ramachandran;Anurathan;anurathan.ramachandran;MPR24A;
@@ -977,7 +977,7 @@ Raimi;Burim;burim.raimi;NPR16A;
 Bastug;Florian;florian.bastug;AUA24A;
 Diallo;Mamadou Oury;mamadououry.diallo;KUA24A;
 El Koudsi;Yasser;yasser.elkoudsi;PME24A;
-Kï¿½nzli;Fabienne;fabienne.kuenzli;KOE24B;
+Künzli;Fabienne;fabienne.kuenzli;KOE24B;
 Friedli;Bodo;bodo.friedli;PME24A;
 Vogler;Melanie;melanie.vogler;DRO24A;
 Krasae;Ratsawadee;ratsawadee.krasae;REF24A;
@@ -986,7 +986,7 @@ Ramseier;Alischa;alischa.ramseier;REF25A;
 Ruffinatto;Romina;romina.ruffinatto;REA24A;
 Vogel;Ronald Ivan;ronaldivan.vogel;KOE24B;
 Petkovic;Nikola;nikola.petkovic;KOE24A;
-Sï¿½nmez;Gï¿½khan;goekhan.soenmez;RPR24A;
+Sönmez;Gökhan;goekhan.soenmez;RPR24A;
 Wyss;Carmen Alessia;carmenalessia.wyss;REF24A;
 Zekiri;Deniz;deniz.zekiri;REF24A;
 Forugh;Jahed;jahed.forugh;REF24A;
@@ -996,18 +996,18 @@ Ismaili;Kushtrim;kushtrim.ismaili;REA24A;
 Bozinovski;Arianna;arianna.bozinovski;REF25A;
 Meister;Thomas;thomas.meister;KOE25B;
 Rahimi;Mohammad Hosein;mohammad.rahimi;PMG25C;
-Lï¿½ttgen;Fabio;fabio.loettgen;KOE24A;
+Löttgen;Fabio;fabio.loettgen;KOE24A;
 Portenier;Jan;jan.portenier;AUA24A;
-Rï¿½ttimann;Dean;dean.ruettimann;KOE16A;
+Rüttimann;Dean;dean.ruettimann;KOE16A;
 Mauramati;Gianfranco;gianfranco.muramati;REA24A;
 Haefelin;Fabio;fabio.haefelin;KOE25B;
-Camuendo Urcuango;Josï¿½ Miguel;josemiguel.camuendourcuango;KOE24B;
-Kï¿½ser;Noah;noah.kaeser;AUF25A;
+Camuendo Urcuango;José Miguel;josemiguel.camuendourcuango;KOE24B;
+Käser;Noah;noah.kaeser;AUF25A;
 Kohler;Michelle;michelle.kohler;PKB25A;BM1_TE25B
-Lï¿½scher;Florian;florian.luescher2;DRO25A;
+Lüscher;Florian;florian.luescher2;DRO25A;
 Fankhauser;Eliane;eliane.fankhauser;KOE25A;
 Suter;Lea;lea.suter2;KOE25B;
-Stï¿½deli;Marco;marco.stuedeli;PRM25B;
+Stüdeli;Marco;marco.stuedeli;PRM25B;
 Hetemi;Faredin;faredin.hetemi;PMG25B;
 Geser;Louis;louis.geser;KOE25A;
 Eng;Lukas;lukas.eng;PMG25C;
@@ -1018,9 +1018,9 @@ Nana;Luca;luca.nana;INF25B;BM1_TE25A
 Burkolter;Silja Anna;siljaanna.burkolter;BM1_TE25A;
 Amiet;Livia;livia.amiet;BM1_TE25A;
 Hegelbach;Yan Nicolas;yannicolas.hegelbach;BM1_TE25A;
-Martinez;Josï¿½ Daniel;josedaniel.martinez;BM1_TE25B;
+Martinez;José Daniel;josedaniel.martinez;BM1_TE25B;
 Kessi;Sean Patrice;seanpatrice.kessi;INF25A;
-Probst;Amï¿½lie;amelie.probst;DRO25A;
+Probst;Amélie;amelie.probst;DRO25A;
 von Arx;Kyra;kyra.vonarx;KOE24A;
 Sutter;Fabio;fabio.sutter;KOE25A;
 Parpan;Gian;gian.parpan;PRM25C;
@@ -1031,28 +1031,28 @@ Lehmann;Sebastian;sebastian.lehmann;KOE25A;
 D'Onofrio;Ennio;ennio.donofrio;PRM25B;
 Mouhim;Youssef;youssef.mouhim;PRM25B;
 Pereira Alves;Dominik;dominik.pereiraalves;AUF25A;
-Niederhï¿½user;Michel;michel.niederhaeuser;PKE25A;
+Niederhäuser;Michel;michel.niederhaeuser;PKE25A;
 Staufer;Silas;silas.staufer;PKE25A;
-Bï¿½gli;Julian Leonardo;julianleonardo.boegli;PMG25B;
+Bögli;Julian Leonardo;julianleonardo.boegli;PMG25B;
 Fux;Gianni Renato;giannirenato.fux;PMG25B;
 Allemann;Marco;marco.allemann2;KOE25A;
 Ghebrehiwet;Biniam;biniam.ghebrehiwet;INF25A;
 Nazzaro;Luca Alessandro;lucaalessandro.nazzaro;AUM25A;
 Brandao;Bruno;bruno.brandao;AUF25A;
-Wï¿½rsten;Noemi;noemi.wuersten;DRO25A;
+Würsten;Noemi;noemi.wuersten;DRO25A;
 Jossi;Jana;jana.jossi;KOE25A;
 Krasniqi;Alron;alron.krasniqi;AUF25A;
 Remensberger;Dominic;dominic.remensberger;BM1_TE25B;
 Studer;Selina;selina.studer3;KUA25A;
-Hï¿½rlimann;Alex;alex.huerlimann;PMG25C;
+Hürlimann;Alex;alex.huerlimann;PMG25C;
 Wolf;Nikita;nikita.wolf;PMG25C;
 Kastrati;Mentor;mentor.kastrati;PMG25C;
 Kirupakaran;Thanan;thanan.kirupakaran;PMG25C;
-Klauenbï¿½sch;Celina;celina.klauenboesch;DRO25A;
+Klauenbösch;Celina;celina.klauenboesch;DRO25A;
 Aloisi;Selina;selina.aloisi;KOE25B;
 Arifi;Rilind;rilind.arifi;PRM25B;
 Hasani;Benet;benet.hasani;PRM25B;
-Knï¿½rr;Lars;lars.knoerr;PRM25B;
+Knörr;Lars;lars.knoerr;PRM25B;
 Beciri;Muhamed;muhamed.beciri;PMG25B;
 Rexhepi;Kushtrim;kushtrim.rexhepi;PMG25A;
 Jakaj;Valentin;valentin.jakaj;PRM25A;
@@ -1068,22 +1068,22 @@ Ameti;Fabian;fabian.ameti;PRM25B;
 Spycher;Nico;nico.spycher;AUM25A;
 Stankovic;Aleksandar;aleksandar.stankovic;PMG25B;
 Del Frate;Elia;elia.delfrate;PKE25A;
-Mï¿½ller;Benjamin;benjamin.mueller4;REF25A;
+Müller;Benjamin;benjamin.mueller4;REF25A;
 Jelaca;Stefan;stefan.jelaca;PKE25A;
-Lï¿½derach;Chantal;chantal.laederach;WTG25A;
+Läderach;Chantal;chantal.laederach;WTG25A;
 Walser;Andrin Simon;andrinsimon.walser;INF25A;
 Jedrinovic;Manuel;manuel.jedrinovic;PRM25C;
 Baerel;Linard;linard.baerel;PMG25A;
 Aebi;Tim;tim.aebi2;PMG25A;
 Selvabalan;Jaleshan;jaleshan.selvabalan;PMG25A;
-Spï¿½ni;Maurice;maurice.spaeni;KOE25A;
+Späni;Maurice;maurice.spaeni;KOE25A;
 Knuchel;Anna;anna.knuchel2;REF25A;
 Kunz;Annamaria;annamaria.kunz;KOE24B;
 Schmeisser;Sara;sara.schmeisser;PKE25A;
-Mï¿½ller;Joel;joel.mueller2;INF25A;BM1_TE25A
+Müller;Joel;joel.mueller2;INF25A;BM1_TE25A
 Berni;Simon;simon.berni;INF25A;BM1_TE25A
 Achermann;David;david.achermann;AUM25A;
-Bï¿½ttiker;Cï¿½dric;cedric.buettiker;PKE25A;
+Büttiker;Cédric;cedric.buettiker;PKE25A;
 Schmuki;Fabio;fabio.schmuki;AUF25A;
 Dauti;Zamir;zamir.dauti;PKB25A;BM1_TE25A
 Dakaj;Altin;altin.dakaj;PRM25B;
@@ -1132,11 +1132,11 @@ Howald;Seline;seline.howald;BM1_TE25A;
 Rufer;David Gideon;davidgideon.rufer;PRM25B;
 Jost;Jan Samuel;jansamuel.jost;KOE25B;
 Nyffenegger;Stephanie;stephanie.nyffenegger;KUA25A;
-Krienbï¿½hl;Sophie;sophie.krienbuehl;BM1_TE25A;
+Krienbühl;Sophie;sophie.krienbuehl;BM1_TE25A;
 Strehler;Ana Victoria;anavictoria.strehler;KOE25B;
 Stebler;Saskia;saskia.stebler;KOE25A;
 Coelho da Mota;Tatjana;tatjana.coelhodamota;REF25A;
-Gï¿½ring;Yannis;yannis.goering;KOE25B;
+Göring;Yannis;yannis.goering;KOE25B;
 Erni;Michelle;michelle.erni;DRO25A;
 Yakob;Degol;degol.yakob;PRM25A;
 Cosic;Dejan;dejan.cosic;PMG25B;
@@ -1145,8 +1145,8 @@ Mollet;Raphael;raphael.mollet;PMG25A;
 Kofmel;Linus;linus.kofmel;PKB25A;BM1_TE25B
 Richichi;Elia;elia.richichi;PRM25A;
 Allemann;Noel;noel.allemann;PRM25A;
-Hï¿½fliger;Manuela;manuela.haefliger;REF25A;
-Sï¿½zï¿½gen;Salman;salman.soezuegen;PRM25B;
+Häfliger;Manuela;manuela.haefliger;REF25A;
+Sözügen;Salman;salman.soezuegen;PRM25B;
 Arnold;Rahel;rahel.arnold;DRO25A;
 Willi;Cony;cony.willi;BM2_TE25B;
 Schwaller;Cyrill;cyrill.schwaller;BM2_TE25A;
@@ -1163,9 +1163,9 @@ RostÃ¡s;Szilvia;szilvia.rostas;KOE25B;
 Er;Rohat;rohat.er;PRM25B;
 Kocyigit;Dide;dide.kocyigit;KOE25A;
 Seiler;Julian;julian.seiler;AUM25A;
-Hï¿½usler;Rahat;rahat.haeusler;PKB25A;BM1_TE25A
+Häusler;Rahat;rahat.haeusler;PKB25A;BM1_TE25A
 Christen;Lorenz Xeno;lorenz.christen;INF25B;
-Zï¿½rcher;Jan;jan.zuercher;BM2_TE25B;
+Zürcher;Jan;jan.zuercher;BM2_TE25B;
 Kalt;Anna;anna.kalt;WTG25A;
 Stich;Vanessa;vanessa.stich;KOE16A;
 Vescovi;Roman;roman.vescovi;AUF25A;
@@ -1179,30 +1179,30 @@ Oeggerli;Lars;lars.oeggerli;BM1_TE25A;
 Kasanga;Marcel;marcel.kasanga;PMG25A;
 Fuhrer;Mara;mara.fuhrer;KOE24B;
 Kunz;Janine;janine.kunz2;DRO25A;
-Rï¿½egg;Leonie;leonie.rueegg;DRO25A;
+Rüegg;Leonie;leonie.rueegg;DRO25A;
 Jeyakumar;Sabhitha;sabhitha.jeyakumar;DRO25A;
 Dreher;Till;till.dreher;PMG25A;
 Zairi;Jetmir;jetmir.zairi;AUF25A;
-Flï¿½eli;Delphine;delphine.flueeli;REF25A;
+Flüeli;Delphine;delphine.flueeli;REF25A;
 Vasiljevic;Nemanja;nemanja.vasiljevic;PRM25C;
 Zahradnik;Simon;simon.zahradnik;PRM25C;
 Bajrami;Nuredin;nuredin.bajrami;PRM25C;
 Kaiser;Bastian;bastian.kaiser;KOE25B;
-Frï¿½hlicher;Lukas;lukas.froehlicher2;KOE24B;
+Fröhlicher;Lukas;lukas.froehlicher2;KOE24B;
 Sakal;Efe Can;efecan.sakal;PRM25B;
 Eberhard;Jana;jana.eberhard;VWB25A;
 Scheidegger;Gloria;gloria.scheidegger;VWB25B;
 Baltisberger;Aris;aris.baltisberger;BM1_TE25B;
 Aeschlimann;Mischa Janick;mischa.aeschlimann;INF25A;
-Steiner;Cï¿½dric;cedric.steiner;PKE25A;
+Steiner;Cédric;cedric.steiner;PKE25A;
 Kahraman;Hakki;hakki.kahraman;KUA25A;
 Correia Lopes;Dani;dani.correialopes;PRM25C;
 Jenzer;Diana;diana.jenzer;AUF25A;
-Bï¿½ttler;Andrï¿½;andre.buettler;AUA25A;
+Büttler;André;andre.buettler;AUA25A;
 Kaddatz;Tobias;tobias.kaddatz;PMG25C;
 Rraci;Kaltrin;kaltrin.rraci;PRM25A;
 Vogt;Simon;simon.vogt;PMG25A;
-Jordi;Cï¿½dric;cedric.jordi;VWB25C;
+Jordi;Cédric;cedric.jordi;VWB25C;
 Naef;Clarina;clarina.naef;WTG25A;
 Ãœnal;Deniz;deniz.uenal;PRM25C;
 Rindlisbacher;Nick Noah;nicknoah.rindlisbacher;INF25B;BM1_TE25A
@@ -1215,16 +1215,16 @@ Rytz;Marco;marco.rytz;AUF25B;
 Chmielnicki;Kamil;kamil.chmielnicki;AUM25A;
 Kummli;Joel;joel.kummli;PRM25C;
 Schmid;Leon;leon.schmid;PMG25C;
-Schwï¿½gli;Joel;joel.schwaegli;MPR25A;
+Schwägli;Joel;joel.schwaegli;MPR25A;
 Schwaller;Raphael;raphael.schwaller;PMG25C;
-Spï¿½ti;Jan;jan.spaeti;PMG25C;
+Späti;Jan;jan.spaeti;PMG25C;
 Stauffer;Julian;julian.stauffer;PMG25C;
 Syfrig;Sven;sven.syfrig;PMG25C;
 Sefedini;Valdrin;valdrin.sefedini;PMG25A;
 Gelabert SuÃ±er;Guillem;guillem.gelabertsuner;INF25B;
 Artho;Nicola;nicola.artho;PMG25B;
 Randegger;Mathis;mathis.randegger;PMG25B;
-Frï¿½licher;David;david.froelicher;PRM25A;
+Frölicher;David;david.froelicher;PRM25A;
 Rickli;Josephine;josephine.rickli;PMG25B;
 Dukic;Djordja;djordja.dukic;PRM25A;
 Gabriel;Eric;eric.gabriel;PRM25C;
@@ -1234,7 +1234,7 @@ Pfister;Kevin;kevin.pfister;AUM25A;
 Andres;Bryan;bryan.andres;KOE25B;
 Jedrinovic;Natalia;natalia.jedrinovic;VWB25C;
 Meneguz;Lorena;lorena.meneguz;WTG25A;
-Haggenmï¿½ller;Alexandra;alexandra.haggenmueller;WTG25A;
+Haggenmüller;Alexandra;alexandra.haggenmueller;WTG25A;
 Berisha;Salih;salih.berisha;PRM25C;
 Sritharan;Atschuten;atschuten.sritharan;PRM25A;
 Varadin;Loris;loris.varadin;PRM25A;
@@ -1250,10 +1250,10 @@ Zulfikjari;Ensar;ensar.zulfikjari;PRM25C;
 Sejdini;Elez;elez.sejdini;PRM25C;
 Pinchuk;Iuri;iuri.pinchuk;PRM25C;
 Pupic;Luka;luka.pupic;PRM25C;
-Kreienbï¿½hl;Jasmin;jasmin.kreienbuehl;KOE25B;
+Kreienbühl;Jasmin;jasmin.kreienbuehl;KOE25B;
 Fischer;Christian;christian.fischer;AUM25A;
-Sikyï¿½rek;Alihaydar;alihaydar.sikyuerek;PRM25C;
-Schï¿½rer;Danja;danja.schaerer;DRO25A;
+Sikyürek;Alihaydar;alihaydar.sikyuerek;PRM25C;
+Schärer;Danja;danja.schaerer;DRO25A;
 Cunha Barbosa;Leticia;leticia.cunhabarbosa;KUA25B;
 Haziri;Zgjim;zgjim.haziri;AUM25A;
 Jackenkroll;Damian;damian.jackenkroll;KOE25B;
@@ -1264,7 +1264,7 @@ Teklehaimanot;Filmon;filmon.teklehaimanot;KUA25B;
 Poethke;Tobias Alfred;tobiasalfred.poethke;PRM25A;
 Uthayakumaran;Delvin;delvin.uthayakumaran;PRM25B;
 Gutaj;Liridon;liridon.gutaj;NPR24A;
-Pï¿½ntener;Dario Joel;dariojoel.puentener;KOE25A;
+Püntener;Dario Joel;dariojoel.puentener;KOE25A;
 Yosief;Efrem;efrem.yosief;KUA25A;
 Pricopi;Sorin-Fanica;sorin-fanica.pricopi;REF25A;
 Yilmaz;Eda;eda.yilmaz;KUA25B;
@@ -1280,7 +1280,7 @@ Landolt;Kim;kim.landolt;WTG25A;
 Sinnathurai;Veenujan;veenujan.sinnathurai;PMG24B;
 Gunasingam;Vithurshan;vithurshan.gunasingam;PRM24B;
 Rohrbach;Dino;dino.rohrbach;KOE25A;
-Stï¿½mpfli;Sebastian;sebastian.staempfli;RPR25A;
+Stämpfli;Sebastian;sebastian.staempfli;RPR25A;
 Dzeljilji;Enis;enis.dzeljilji;RPR25A;
 Nazari;Mahtab;mahtab.nazari;REA25A;
 Akbulut;Seyma;seyma.akbulut;KOE25B;
@@ -1299,14 +1299,14 @@ Bernhard;Lars;lars.bernhard;AUF25B;
 Magurno;Mattia Carmine;mattiacarmine.magurno;INF25A;
 Cemali;Eren;eren.cemali;NPR24A;
 Hunziker;Dominik;dominik.hunziker;KUA25B;
-Rï¿½egger;Colin;colin.rueegger;AUF24A;
+Rüegger;Colin;colin.rueegger;AUF24A;
 Fahrer;Denise;denise.fahrer;KOE24B;
 Krasniqi;Labiat;labiat.krasniqi;AUA25A;
 Graber;Marlon Jonas;marlonjonas.graber;KUA25B;
-Mï¿½ller;Cederic;cederic.mueller;PRM25A;
+Müller;Cederic;cederic.mueller;PRM25A;
 Hassani;Eynollah;eynollah.hassani;AUA25A;
 Roth;Christoph;christoph.roth3;KOE25B;
-Ã–ztï¿½rk;Mustafamert;mustafamert.oeztuerk;PKE25A;
+Ã–ztürk;Mustafamert;mustafamert.oeztuerk;PKE25A;
 Misteli;Arthee;arthee.misteli;NPR24A;
 Krasniqi;Toni;toni.krasniqi;MPR25A;
 Duss;Jade;jade.duss;REF25A;
@@ -1315,7 +1315,7 @@ Schenker;Saskia;saskia.schenker;AUM16A;
 Gambone;Dario;dario.gambone;BM2_TE25B;
 Gasser;Elias;elias.gasser;VWB25B;
 Krishnarajah;Priyanka;priyanka.krishnarajah;VWB25B;
-Hï¿½hn;Carmen;carmen.hoehn;VWB25B;
+Höhn;Carmen;carmen.hoehn;VWB25B;
 Blaser;Tamara;tamara.blaser;VWB25B;
 Cardinaux;Jamil;jamil.cardinaux;VWB25A VWB25A;
 Jabou;Anthea;anthea.jabou;REF25A;
@@ -1337,7 +1337,7 @@ Roweck;Jan;jan.roweck;AUM25A;
 Mosimann;Amanda-Amalia;amanda-amalia.mosimann;REF25A;
 Gloor;Anastasia;anastasia.gloor;KOE25B;
 Florescu;Cristian-Bogdan;cristian-bogdan.florescu;KOE25A;
-Dï¿½rrenberger;Tamara;tamara.duerrenberger;REF25A;
+Dürrenberger;Tamara;tamara.duerrenberger;REF25A;
 Gashi;Dijamant;dijamant.gashi;AUF25A;
 Tesfasilassie;Henok;henok.tesfasilassie;PRM25C;
 Scholl;Gregory;gregory.scholl;KUA25A;

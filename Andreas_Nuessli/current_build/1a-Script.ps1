@@ -13,7 +13,8 @@
 #--------------------------------------------------------------------------------
 #Erstellen/*Deaktivieren der AD-Accounts für alle Lernenden des BZT Frauenfeld gemäss CSV File
 
-
+# funktion textumwandlung importieren
+Import-Module -Name "$PSScriptRoot/Text-Umwandlung.ps1" 
 # config file mit relativen pfad laden
 . ".\config.ps1"
 
@@ -99,7 +100,13 @@ function Add-UsersFromCsv {
 #Funktion welche alle in einer CSV Liste enthaltenen Nutzer Als Aduser erstellt
 function Funktion-1a {
     # CSV-Datei importieren
-    $csvData = Import-Csv -Path $config.SchuelerCsv -Delimiter ';'
+    #$csvData = Import-Csv -Path $config.SchuelerCsv -Delimiter ';'
+
+    #for testing of text-umwandlung we use new filepath
+    $csvMitUmlauten = Import-Csv -Path $config.SchuelerCsv -Delimiter ';'
+
+    #function call (later with direct path from config)
+    $csvData = TextUmwandeln -csvpath "$($csvMitUmlauten)"
 
     $Continue = $true
 
