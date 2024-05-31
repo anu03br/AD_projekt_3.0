@@ -1,5 +1,5 @@
 ﻿#--------------------------------------------------------------------------------
-# Autor: Amar Vejapi
+# Autor: Amar Vejapi, Andreas Nüssli
 # Funktion des Skripts: Ganzes Skript
 # Funktion des Skripts: Konfigurationen, z.B. Pfade bereitstellen
 # Datum: 15.05.2024
@@ -14,7 +14,8 @@
 $config = @{
     SchuelerCsv  = ".\schueler-klein.csv"
     #testpath for Text-Umwandlung
-    TestCsv      = ".\Schueler-Umlaut.csv"
+    Test1      = ".\schueler-klein1.csv"
+    Test2      = ".\schueler-klein2.csv"
     InitPw       = "bztf.001"
     OUPath       = "OU=BZTF,DC=bztf,DC=local"
     OULernende   = "Lernende"

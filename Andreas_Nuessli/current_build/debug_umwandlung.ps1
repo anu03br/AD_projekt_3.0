@@ -1,4 +1,20 @@
+#--------------------------------------------------------------------------------
+# Autor: Andreas Nüssli
+# Funktion des Skripts: CSV einlese, Umlaute ersetzten und ein korrigiertes CSV ausgeben
+# Datum: 29.05.2024
+# Version: 0.6
+# Changelog
+# 15.05.24 V0.5 Skript erstellt
+# 29.05.24 V0.6 Debugging und einfügen eines params
+# 31.05.24 V0.7 Übergabeparameter und  $newfile zeigen nun auf config VCariablen
+#
+#--------------------------------------------------------------------------------
+# if $newfile = -csvpath '.\schueler-klein1.csv' and ".\schueler-klein2.csv" it works correctly
+
+# config file mit relativen pfad laden
+. ".\config.ps1"
 function DebugUmwandeln {
+
 
     param (
         [string]$csvpath 
@@ -6,7 +22,7 @@ function DebugUmwandeln {
 
     try {
         # Pfad zu der neuen CSV Datei
-        $newfile = "$PSScriptRoot\Schueler-test.csv"
+        $newfile = $Config.Test2
 
         Write-Host "Lesen der CSV-Datei vom Pfad: $csvpath"
         Write-Host "Neue Datei wird erstellt unter: $newfile"
@@ -34,4 +50,4 @@ function DebugUmwandeln {
 . ".\config.ps1"
 
 # Beispielaufruf der Funktion
-DebugUmwandeln -csvpath $config.SchuelerCsv
+DebugUmwandeln -csvpath $Config.Test1
