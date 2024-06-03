@@ -20,8 +20,8 @@ $config = @{
     OUPath       = "OU=BZTF,DC=bztf,DC=local"
     OULernende   = "Lernende"
     OUKlasse     = "Klassengruppen"
-    LogFileUser  = ".\\users.log"
-    LogFileGroup = ".\\groups.log"
+    LogFileUser  = ".\logfiles\users\users.log"
+    LogFileGroup = ".\logfiles\groups\groups.log"
     ClassFolder  = ".\\Klassen"
     # Renamed extensionAttribute
     Klasse          = "extensionAttribute1"  # Custom attribute name $Klasse

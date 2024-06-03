@@ -41,7 +41,7 @@ while ($Continue) {
         # 2a
         3 {
             Write-Host "Logfile erstellung wird gestartet..`n"
-            .\2a-Script.ps1
+            .\2a-Skript_v2.ps1
 
         }
         # 2b   
