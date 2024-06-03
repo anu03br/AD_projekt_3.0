@@ -7,6 +7,7 @@
 # 23.05.24 V0.5 Skript Erstellt
 # 23.05.24 V0.5 switch case erstellt, write host hinzugefügt
 #--------------------------------------------------------------------------------
+Write-Host ===="===================================="
 Write-Host "Willkommen im AD Verwaltungsprogramm"
 Write-Host "(c) 2024 Amar Vejapi & Andreas Nüssli"
 Write-Host "Powered by FensterKraftMuschel 7.0"
@@ -28,16 +29,19 @@ while ($Continue) {
         # 1a
         1 {
             Write-Host "CSV abgleich User wird gestartet..`n"
+            .\1a-Script.ps1
 
         }
         # 1b
         2 {
             Write-Host "CSV abgleich Gruppen wird gestartet..`n"
+            .\1b-Script.ps1
 
         }
         # 2a
         3 {
             Write-Host "Logfile erstellung wird gestartet..`n"
+            .\2a-Script.ps1
 
         }
         # 2b   

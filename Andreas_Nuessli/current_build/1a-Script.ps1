@@ -9,12 +9,12 @@
 # 27.05.24 v0.7 Unterfunktion erstellt, welche die AD Nutzer welche nicht mehr im CSV sind deaktiviert. Alle Write-Hosts und Comments auf Deutsch geschrieben
 # 28.05.24 v0.8 Beim erstellen des ADUsers wird die Klasse in -Company und die Klasse2 in -Department Gespeichert. Diese Können bei den Benutzereigenschaften im Reiter Organisation eingesehen werden
 # 28.05.24 v0.8.1 name der unterfunktion in Clear-OldUsers umbenannt
-# namen mit sonderzeichen (ä,ü,ö) werden im AD nicht korrkt angezeigt, evtl konvertieren
+# 03.06.24 v0.8.5 Funktion zum Ersetzen von Umlauten wurde integriert. Skript ist bereit für Testing
 #--------------------------------------------------------------------------------
 #Erstellen/*Deaktivieren der AD-Accounts für alle Lernenden des BZT Frauenfeld gemäss CSV File
 
 # funktion textumwandlung importieren
-Import-Module -Name "$PSScriptRoot/debug_umwandlung.ps1" 
+. "$PSScriptRoot\UmlauteErsetzen.ps1" 
 # config file mit relativen pfad laden
 . ".\config.ps1"
 
@@ -99,17 +99,12 @@ function Add-UsersFromCsv {
 
 #Funktion welche alle in einer CSV Liste enthaltenen Nutzer Als Aduser erstellt
 function Funktion-1a {
-    # CSV-Datei importieren
-    #$csvData = Import-Csv -Path $config.SchuelerCsv -Delimiter ';'
 
-    # run debug_umwandlung
-    DebugUmwandeln -csvpath $Config.Test1
+    # Funktion UmlauteErsetzen aufrufen (CSV vorbereiten für import)
+    UmlauteErsetzen -csvpath $Config.Test1
 
     #for testing of debug_umwandlung we use new filepath test2 = schueler-klein2
     $csvData = Import-Csv -Path $config.Test2 -Delimiter ';'
-
-    #function call (later with direct path from config)
-    #$csvData = TextUmwandeln -csvpath "$($csvMitUmlauten)"
 
     $Continue = $true
 

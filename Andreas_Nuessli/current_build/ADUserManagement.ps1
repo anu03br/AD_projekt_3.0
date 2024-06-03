@@ -10,7 +10,7 @@
 # 21.05.24 v1.0 Getestet, Skript lauft korrekt und ohne Fehler
 # 21.05.24 v1.1 Abfrage nach gesperrten benutzern hinzugefügt (mit anzeige der anzahl falls 0)
 #--------------------------------------------------------------------------------
-
+#2c
 function Show-ADUserManagementMenu {
     Write-Host "Willkommen im AD Verwaltungsprogramm"
     $Continue = $true
@@ -45,7 +45,7 @@ function Show-ADUserManagementMenu {
                 Write-Host "Total locked-out users: $lockedOutCount"
             }
             5 {
-                Write-Host "Programm wird beendet"
+                Write-Host "Programm wird krass beendet `nNoCap {°o°}~ **X"
                 $Continue = $false  
             }
             default {
