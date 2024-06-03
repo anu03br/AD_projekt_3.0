@@ -1,0 +1,36 @@
+1a
+# if any groupname is "" this fails
+            AddToGroup -GroupName "$($user.Klasse)" -SAM "$($user.Benutzername)"
+            AddToGroup -GroupName "$($user.Klasse2)" -SAM "$($user.Benutzername)"
+#build in check if empty
+
+1b
+works
+
+2a
+    #this sleeps the whole console - find a better way
+    Start-Sleep -Seconds 86400  # Warte 24 Stunden = 86400 Sekunden
+# this is basically a never ending loop with sleeps in between
+# we can't just freeze the whole app for a day, maybe like get-datetime and if datetime= 12:00 do stuff idk
+
+2b
+
+nice but can we have a menue so I can input a samaccountname and the do as many things as i want
+then push a number to get back to main menue.
+
+2c
+
+it just works.
+
+HauptMenu
+
+Don't forget to check for changes function names at the end.
+
+UmlauteErsetzen
+
+Seems to work sometimes with -encoding UTF8 and sometimes with -encoding latin1
+whats up with that
+
+config
+
+when you're done testing change the variables for the csv back. also figure out a variable name for the changed csv.

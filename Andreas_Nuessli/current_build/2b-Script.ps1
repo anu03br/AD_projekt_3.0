@@ -56,7 +56,7 @@ function Funktion-2b {
     }
 
 
-    $frage2b = Read-Host "Welche Funktion wollen Sie betätigen? Konto entsperren [1], Konto aktivieren [2] oder Passwort neusetzen [3]"
+    $frage2b = Read-Host "Welche Funktion wollen Sie betätigen? Konto entsperren [1], Konto aktivieren [2],  Passwort neusetzen [3], Zurück ins Hauptmenü [4]"
     if ($frage2b -eq "1") {
         KontoEntsperren
     }
@@ -65,6 +65,10 @@ function Funktion-2b {
     }
     elseif ($frage2b -eq "3") {
         PWneu
+    }
+    elseif ($frage2b -eq "4") {
+        # Geht zurück ins Hauptmenü
+        return
     }
     else {
         "Fehler"

@@ -1,5 +1,5 @@
 #--------------------------------------------------------------------------------
-# Autor: Andreas Nüssli
+# Autor: Amar Vejapi, Andreas Nüssli
 # Funktion des Skripts: CSV einlese, Umlaute ersetzten und ein korrigiertes CSV ausgeben
 # Datum: 29.05.2024
 # Version: 0.6
@@ -30,7 +30,7 @@ function UmlauteErsetzen {
         
 
         # Lesen der CSV und Ersetzen der Umlaute
-        $content = Get-Content $csvpath -Encoding latin1 -ErrorAction Stop
+        $content = Get-Content $csvpath -Encoding UTF8 -ErrorAction Stop
         Write-Host "CSV-Datei erfolgreich gelesen."
 
         try {
@@ -49,7 +49,7 @@ function UmlauteErsetzen {
         Write-Host "Neue Datei wird erstellt unter: $newfile"
 
         # Schreiben des neuen Inhalts in die neue Datei
-        Set-Content -Path $newfile -Value $newContent -Encoding latin1 -ErrorAction Stop
+        Set-Content -Path $newfile -Value $newContent -Encoding UTF8 -ErrorAction Stop
         Write-Host "Umlaute wurden ersetzt und die Datei wurde unter $newfile gespeichert."
     } catch {
         Write-Host "Ein Fehler ist aufgetreten: $_"

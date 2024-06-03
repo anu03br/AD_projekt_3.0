@@ -108,7 +108,7 @@ function Add-KlassenFromCsv{
     }
 }
 
-function Funktion-1b {
+function Get-ADGroupsFromCSV {
 
     # CSV-Datei importieren
     $csvData = Import-Csv -Path $Config.SchuelerCsv -Delimiter ';'
@@ -150,4 +150,4 @@ function Funktion-1b {
         }
     }       
 }
-Funktion-1b
+Get-ADGroupsFromCSV

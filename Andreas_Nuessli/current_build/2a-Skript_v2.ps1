@@ -9,7 +9,7 @@
 #                       - Datum der letzten Anmeldung
 #                       - Anzahl der Logins
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
+# this is all kinds of fucked
 . ".\Config.ps1"
 
 while ($true) {
@@ -23,11 +23,12 @@ while ($true) {
         }
     
         # Logfile erstellen ...
+        # should be users@ datetime yyyy:mm:dd: hh:mm:ss
         $LogfileName = "$LogfilePath$NextLogFileNumber.log"
 
         # ... und die Daten darin speichern
         "Datum: $(Get-Date -Format "dd.MM.yyyy_HH:mm:ss")" | Out-File -FilePath $LogfileName
-
+        # name -eq "bztf" sould rather point to config.ou
         $ouDN = (Get-ADOrganizationalUnit -Filter {Name -eq "BZTF"}).DistinguishedName
         Get-ADUser -Filter * -SearchBase $ouDN -Properties PasswordLastSet, LastLogonDate, BadLogonCount |
             Select-Object SamAccountName, PasswordLastSet, LastLogonDate, BadLogonCount |
@@ -35,7 +36,9 @@ while ($true) {
         
         Write-Host "Ein Logfile wurde erfolgreich erstellt."
     } catch {
+        # here is should give more info
         Write-Host "Ein Logfile wurde NICHT erstellt, aus jeglichen Gründen"
     }
+    #this sleeps the whole console - find a better way
     Start-Sleep -Seconds 86400  # Warte 24 Stunden = 86400 Sekunden
 }

@@ -14,7 +14,7 @@
 $config = @{
     SchuelerCsv  = ".\schueler-klein.csv"
     #testpath for Text-Umwandlung
-    Test1      = ".\schueler.csv"
+    Test1      = ".\schueler-klein.csv"
     Test2      = ".\schueler2.csv"
     InitPw       = "bztf.001"
     OUPath       = "OU=BZTF,DC=bztf,DC=local"
@@ -23,8 +23,10 @@ $config = @{
     LogFileUser  = ".\logfiles\users\users.log"
     LogFileGroup = ".\logfiles\groups\groups.log"
     ClassFolder  = ".\\Klassen"
-    # Renamed extensionAttribute
-    Klasse          = "extensionAttribute1"  # Custom attribute name $Klasse
-    Klasse2         = "extensionAttribute2"  # Custom attribute name $Klasse2
-    DisableDate     = "extensionAttribute3"  # Custom attribute name $disableDate
+    Domain       = "bztf.local"
+    # organization should be position 
+    Organisation = "BZTF Frauenfeld"
+
+    # Klasse wird gespeichert unter $User.company
+    # Klasse2 wird gespeichert unter $User.Department    
 }

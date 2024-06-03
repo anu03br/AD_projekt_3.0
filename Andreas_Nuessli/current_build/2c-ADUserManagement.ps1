@@ -21,7 +21,7 @@ function Show-ADUserManagementMenu {
         Write-Host "2. Alle Benutzer deren Passwort nie abläuft"
         Write-Host "3. Alle Benutzer welche deaktiviert sind anzeigen"
         Write-Host "4. Alle Benutzer anzeigen die Gesperrt sind"
-        Write-Host "5. Beenden`n"
+        Write-Host "5. Zurück ins Hauptmenü`n"
         
         # Take choice 
         $Choice = Read-Host "Bitte wählen Sie eine Option (1-4)`n"
@@ -45,7 +45,7 @@ function Show-ADUserManagementMenu {
                 Write-Host "Total locked-out users: $lockedOutCount"
             }
             5 {
-                Write-Host "Programm wird krass beendet `nNoCap {°o°}~ **X"
+                Write-Host "Zurück ins Hauptmenü"
                 $Continue = $false  
             }
             default {

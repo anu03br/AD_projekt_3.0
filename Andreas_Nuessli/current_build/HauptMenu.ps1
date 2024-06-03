@@ -15,10 +15,10 @@ $Continue = $true
 
 while ($Continue) {
     Write-Host "Bitte wählen Sie:`n"
-    Write-Host "1. 1a"
-    Write-Host "2. 1b"
-    Write-Host "3. 2a"
-    Write-Host "4. 2b"
+    Write-Host "1. 1a - AD Benutzer aus CSV importieren"
+    Write-Host "2. 1b - ADgruppen aus CSV importieren"
+    Write-Host "3. 2a - Sicherheitsrelevante Informationen protokollieren"
+    Write-Host "4. 2b - Einzelne AD Benutzer verwalten"
     Write-Host "5. 2c - Übersicht über AD Benutzer"
     Write-Host "6. Beenden`n"
     
@@ -28,14 +28,14 @@ while ($Continue) {
     switch ($Choice) {
         # 1a
         1 {
-            Write-Host "CSV abgleich User wird gestartet..`n"
-            .\1a-Script.ps1
+            Write-Host "CSV abgleich der User wird gestartet..`n"
+            .\1a-GetADUsersFromCSV.ps1
 
         }
         # 1b
         2 {
-            Write-Host "CSV abgleich Gruppen wird gestartet..`n"
-            .\1b-Script.ps1
+            Write-Host "CSV abgleich der Gruppen wird gestartet..`n"
+            .\1b-Get-ADGroupsFromCSV.ps1
 
         }
         # 2a
@@ -52,7 +52,7 @@ while ($Continue) {
         # 2c - Übersicht über AD Benutzer
         5 {
             Write-Host "Übersicht wird gestartet..`n"
-            .\ADUserManagement.ps1
+            .\2c-ADUserManagement.ps1
         }
         6 {
             Write-Host "Beenden..."
