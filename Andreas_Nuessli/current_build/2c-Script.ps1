@@ -1,5 +1,10 @@
-﻿#2c
-#Übersicht über alle AD-Benutzer:
+﻿#-------------------------------------------------
+# Autor: Amar Vejapi
+# Datum: 21.05.2024
+# Version: 1.0
+# Bemerkungen: 
+# Skript-Nr: 2b
+# Funktion des Skripts: Übersicht über alle AD-Benutzer:
 #  - für welche kein Passwort gesetzt ist
 #  - Passwort läuft nie ab
 #  - deaktivierte/gesperrte AD-Benutzer

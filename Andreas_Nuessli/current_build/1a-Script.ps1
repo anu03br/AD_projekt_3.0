@@ -1,5 +1,5 @@
 ﻿#--------------------------------------------------------------------------------
-# Autor: Amar Vejapi
+# Autor: Amar Vejapi, Andreas Nüssli
 # Funktion des Skripts: Bulk Funktion zum importieren von Usern aus einer CSV Liste
 # Datum: 16.05.2024
 # Version: 0.5
@@ -14,7 +14,7 @@
 #Erstellen/*Deaktivieren der AD-Accounts für alle Lernenden des BZT Frauenfeld gemäss CSV File
 
 # funktion textumwandlung importieren
-Import-Module -Name "$PSScriptRoot/Text-Umwandlung.ps1" 
+Import-Module -Name "$PSScriptRoot/debug_umwandlung.ps1" 
 # config file mit relativen pfad laden
 . ".\config.ps1"
 
@@ -56,7 +56,7 @@ function Clear-OldUsers {
      Write-Host "Anzahl deaktivierter User: $disabledUserCount`n"
 }
 
-# Funktion erstellen
+# Funktion um neue ADUser zu erstellen (nur wenn nicht vorhanden)
 function Add-UsersFromCsv {
 
     param (
@@ -102,11 +102,14 @@ function Funktion-1a {
     # CSV-Datei importieren
     #$csvData = Import-Csv -Path $config.SchuelerCsv -Delimiter ';'
 
-    #for testing of text-umwandlung we use new filepath
-    $csvMitUmlauten = Import-Csv -Path $config.SchuelerCsv -Delimiter ';'
+    # run debug_umwandlung
+    DebugUmwandeln -csvpath $Config.Test1
+
+    #for testing of debug_umwandlung we use new filepath test2 = schueler-klein2
+    $csvData = Import-Csv -Path $config.Test2 -Delimiter ';'
 
     #function call (later with direct path from config)
-    $csvData = TextUmwandeln -csvpath "$($csvMitUmlauten)"
+    #$csvData = TextUmwandeln -csvpath "$($csvMitUmlauten)"
 
     $Continue = $true
 

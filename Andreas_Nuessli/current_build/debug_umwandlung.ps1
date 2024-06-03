@@ -10,6 +10,8 @@
 #
 #--------------------------------------------------------------------------------
 # if $newfile = -csvpath '.\schueler-klein1.csv' and ".\schueler-klein2.csv" it works correctly
+# function works with $newfile = $Config.Test2 AND DebugUmwandeln -csvpath $Config.Test1
+# when calling the script from 1a it doesn't work "The term 'DebugUmwandeln' is not recognized as a name of a cmdlet,"
 
 # config file mit relativen pfad laden
 . ".\config.ps1"
@@ -25,29 +27,37 @@ function DebugUmwandeln {
         $newfile = $Config.Test2
 
         Write-Host "Lesen der CSV-Datei vom Pfad: $csvpath"
-        Write-Host "Neue Datei wird erstellt unter: $newfile"
+        
 
         # Lesen der CSV und Ersetzen der Umlaute
-        $content = Get-Content $csvpath -ErrorAction Stop
+        $content = Get-Content $csvpath -Encoding latin1 -ErrorAction Stop
         Write-Host "CSV-Datei erfolgreich gelesen."
 
-        $newContent = $content | ForEach-Object {
+        try {
+            $newContent = $content | ForEach-Object {
             $_ -replace 'ä', 'ae' `
                -replace 'ö', 'oe' `
                -replace 'ü', 'ue'
+            }
+            Write-Host "Umlaute erfolgreich ersetzt."
         }
-
-        Write-Host "Umlaute erfolgreich ersetzt."
+        catch{
+            Write-Error "Beim ersetzen der Umlaute ist ein Fehler aufgetreten."
+            Write-Error $_
+        }
+        
+        Write-Host "Neue Datei wird erstellt unter: $newfile"
 
         # Schreiben des neuen Inhalts in die neue Datei
-        Set-Content -Path $newfile -Value $newContent -ErrorAction Stop
+        Set-Content -Path $newfile -Value $newContent -Encoding latin1 -ErrorAction Stop
         Write-Host "Umlaute wurden ersetzt und die Datei wurde unter $newfile gespeichert."
     } catch {
         Write-Host "Ein Fehler ist aufgetreten: $_"
     }
 }
 # config file mit relativen pfad laden
-. ".\config.ps1"
+#. ".\config.ps1"
 
 # Beispielaufruf der Funktion
 DebugUmwandeln -csvpath $Config.Test1
+#DebugUmwandeln -csvpath

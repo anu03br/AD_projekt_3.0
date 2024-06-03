@@ -48,7 +48,7 @@ while ($Continue) {
         # 2c - Übersicht über AD Benutzer
         5 {
             Write-Host "Übersicht wird gestartet..`n"
-            .\2c_v2.ps1
+            .\ADUserManagement.ps1
         }
         6 {
             Write-Host "Beenden..."

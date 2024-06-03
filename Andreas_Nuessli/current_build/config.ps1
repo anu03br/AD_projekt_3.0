@@ -14,8 +14,8 @@
 $config = @{
     SchuelerCsv  = ".\schueler-klein.csv"
     #testpath for Text-Umwandlung
-    Test1      = ".\schueler-klein1.csv"
-    Test2      = ".\schueler-klein2.csv"
+    Test1      = ".\schueler.csv"
+    Test2      = ".\schueler2.csv"
     InitPw       = "bztf.001"
     OUPath       = "OU=BZTF,DC=bztf,DC=local"
     OULernende   = "Lernende"
