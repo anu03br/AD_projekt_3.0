@@ -1,5 +1,5 @@
 ﻿#--------------------------------------------------------------------------------
-# Autor: Andreas Nüssli
+# Autor: Amar Vejapi, Andreas Nüssli
 # Funktion des Skripts: Bulk Funktion zum importieren von Usern aus einer CSV Liste
 # Datum: 16.05.2024
 # Version: 0.5
@@ -10,9 +10,6 @@
 # 28.05.24 v0.8 Beim erstellen des ADUsers wird die Klasse in -Company und die Klasse2 in -Department Gespeichert. Diese Können bei den Benutzereigenschaften im Reiter Organisation eingesehen werden
 # 28.05.24 v0.8.1 name der unterfunktion in Clear-OldUsers umbenannt
 # 03.06.24 v0.8.5 Funktion zum Ersetzen von Umlauten wurde integriert. Skript ist bereit für Testing
-# 03.06.24 v0.8.6 Name der Datei in "1a-GetADUsersFromCSV.ps1 umbenannt"
-# 05.06.24 v0.9 Funktion AddToGroup in Hauptfunktion Get-ADUsersFromCSV integriert. AddToGroup überprüft nun auch, ob ein Gruppenname leer ist.
-# 05.06.24 v0.9.1  IF $user.Benutzername length -gt 20 truncate to 20 chars
 #--------------------------------------------------------------------------------
 #Erstellen/*Deaktivieren der AD-Accounts für alle Lernenden des BZT Frauenfeld gemäss CSV File
 
@@ -59,38 +56,6 @@ function Clear-OldUsers {
      Write-Host "Anzahl deaktivierter User: $disabledUserCount`n"
 }
 
-function AddToGroup {
-    # GroupName (Klasse) und SAM (User.SAMAccountName) übergeben
-    param (
-        [string]$GroupName,
-        [string]$SAM
-    )
-    # Überprüfe, ob eine Gruppe leer oder ' ' ist (wenn keine Klasse im CSV vorhanden ist)
-    if ([string]::IsNullOrWhiteSpace($GroupName)) {
-        Write-Host "Die Gruppe '$GroupName' ist leer oder nicht vorhanden, überspringe."
-        return
-    }
-    # Überprüfen, ob die Gruppe existiert
-    $existingGroup = Get-ADGroup -Filter {Name -eq $GroupName} -ErrorAction SilentlyContinue
-
-    if ($existingGroup) {
-        try {
-            # wenn Gruppe existiert, füge den benutzer hinzu
-            Add-ADGroupMember -Identity $GroupName -Members $SAM -ErrorAction Stop
-            Write-Host "Der Benutzer '$SAM' wurde zur Gruppe '$GroupName' hinzugefügt."
-        }
-        catch {
-            Write-Error "Beim Hinzufügen des Benutzers '$SAM' zur Gruppe '$GroupName' ist ein Fehler aufgetreten."
-            Write-Error $_
-        }
-    }
-    else {
-        Write-Host "Die Gruppe '$GroupName' existiert nicht, überspringe."
-    }
-}
-
-
-
 # Funktion um neue ADUser zu erstellen (nur wenn nicht vorhanden)
 function Add-UsersFromCsv {
 
@@ -106,30 +71,19 @@ function Add-UsersFromCsv {
             Write-Output "Der Benutzer '$($user.Benutzername)' existiert bereits. Erstellung wird übersprungen.`n"
             continue
         } else {
-            # den benutzernamen des users zwischenspeichern
-            $Benutzername = $user.Benutzername
-
-            # wenn Benutzernamen länger als 20 Zeichen sind werden sie gekürtzt
-            # SamAccountNames dürfen nicht länger als 20 Zeichen sein
-            if ($Benutzername.Length -gt 20) {
-                # Kürze alle Benutzernamen auf 20 zeichen
-                $Benutzername = $Benutzername.Substring(0, 20)
-            }
 
             # wenn der User noch nicht existiert erstelle einen Neuen Account
-            # "@bztf.local" und BZTF Frauenfeld in config varfiablen auslagern $Config.domain = "Bztf.local"
             try {
                 New-ADUser -GivenName $user.Vorname `
-                           -Surname $user.Name `
-                           -Name "$($user.Vorname) $($user.Name)" `
-                           -DisplayName "$($user.Vorname) $($user.Name)" `
-                           -SamAccountName $Benutzername `
-                           -UserPrincipalName "$($Benutzername)@$($config.Domain)" `
+                           -Surname $user.Nachname `
+                           -Name "$($user.Vorname) $($user.Nachname)" `
+                           -SamAccountName $user.Benutzername `
+                           -UserPrincipalName "$($user.Benutzername)@bztf.local" `
                            -Path "OU=$($config.OULernende),$($config.OUPath)" `
                            -Enabled $True `
                            -AccountPassword (ConvertTo-SecureString $config.InitPW -AsPlainText -Force) `
                            -ChangePasswordAtLogon $False `
-                           -Title $config.Organisation `
+                           -Organization "BZTF Frauenfeld" `
                            -Company $user.Klasse `
                            -Department $user.Klasse2
 
@@ -139,21 +93,18 @@ function Add-UsersFromCsv {
                 Write-Error "Beim erstellen des Benutzers '$($user.Benutzername)' ist ein Fehler aufgetreten."
                 Write-Error $_
             }
-            # if any groupname is "" this fails
-            AddToGroup -GroupName "$($user.Klasse)" -SAM "$($Benutzername)"
-            AddToGroup -GroupName "$($user.Klasse2)" -SAM "$($Benutzername)"
         }
     }
 }
 
 #Funktion welche alle in einer CSV Liste enthaltenen Nutzer Als Aduser erstellt
-function Get-ADUsersFromCSV {
+function Funktion-1a {
 
     # Funktion UmlauteErsetzen aufrufen (CSV vorbereiten für import)
-    UmlauteErsetzen -csvpath $Config.SchuelerCsv
+    UmlauteErsetzen -csvpath $Config.Test1
 
-    #Das CSV ohne Umlaute Wird importiert
-    $csvData = Import-Csv -Path $config.SchuelerCsv -Delimiter ';'
+    #for testing of debug_umwandlung we use new filepath test2 = schueler-klein2
+    $csvData = Import-Csv -Path $config.Test2 -Delimiter ';'
 
     $Continue = $true
 
@@ -189,4 +140,4 @@ function Get-ADUsersFromCSV {
         }
     }
 }
-Get-ADUsersFromCSV
+Funktion-1a

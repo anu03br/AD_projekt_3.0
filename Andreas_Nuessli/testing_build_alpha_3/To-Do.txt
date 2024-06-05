@@ -1,0 +1,55 @@
+CSV import
+# works but "Joël" is not converted to "Joel"
+
+1a - Done
+# if any groupname is "" this fails
+            AddToGroup -GroupName "$($user.Klasse)" -SAM "$($user.Benutzername)"
+            AddToGroup -GroupName "$($user.Klasse2)" -SAM "$($user.Benutzername)"
+#build in check if empty
+## Added check 
+if ([string]::IsNullOrWhiteSpace($GroupName))
+to function AddToGroup
+#It now works as intended
+
+1b
+works
+
+2a
+    #this sleeps the whole console - find a better way
+    Start-Sleep -Seconds 86400  # Warte 24 Stunden = 86400 Sekunden
+# this is basically a never ending loop with sleeps in between
+# we can't just freeze the whole app for a day, maybe like get-datetime and if datetime= 12:00 do stuff idk
+
+-proposed solution: when 2a is called you can activate and set the timer to any time of day (set value in config to 1).
+when MainMenue is called it will check if $config.backup = 1. if true it will start the logging process.
+this way the function is 1. menuedriven 2. automated
+
+-if possible we could also divert all error messages to a seperate log.
+
+2b - done
+
+!nice but can we have a menue so I can input a samaccountname and the do as many things as i want
+then push a number to get back to main menue.
+
+!you can still input bogus usernames but it is caugth when calling any subfunction. no red errors.
+
+## Added while Loop so you can now do things until you choose 5 in menue (back to main menue)
+# added option to change user while in submenue
+
+#
+2c
+
+it just works.
+
+HauptMenu
+
+Don't forget to check for changes function names at the end.
+
+UmlauteErsetzen
+
+Seems to work sometimes with -encoding UTF8 and sometimes with -encoding latin1
+whats up with that
+
+config
+
+when you're done testing change the variables for the csv back. also figure out a variable name for the changed csv.
