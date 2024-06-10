@@ -1,16 +1,19 @@
 ﻿#--------------------------------------------------------------------------------
 # Autor: Andreas Nüssli
 # Funktion des Skripts: Erstellen/*Löschen der dazugehörigen AD-Gruppen pro Klasse
-# Datum: 16.05.2024
-# Version: 0.5
+# Datum: 10.06.24
+# Version: 1.0
 # Changelog
 # 16.05.24 V0.5 Skript Erstellt
 # 28.05.24 v0.6 Funktion zur erstellung von Neuen Gruppen erweitert
 # 28.05.24 v0.7 unterfunktion Find-Klasse hinzugefügt
 # 28.05.24 v0.8 erstellen der klasse in eigene unterfunktion New-Klasse ausgelagert
 # 28.05.24 v0.9 Funktion restrukturiert mit menüführung und schlanker gemacht
+# 10.06.24 v1.0 write-Log funktion integriert
 #--------------------------------------------------------------------------------
 
+# funktion Write-Log importieren
+. "$PSScriptRoot\Write-Log.ps1" 
 # config file mit relativen pfad laden
 . ".\config.ps1"
 
@@ -39,7 +42,8 @@ function Clear-Oldgroups {
             $benutzerZahl =  Get-ADGroupMember -Identity $group | Measure-Object | Select-Object -ExpandProperty Count
 
             if ($benutzerZahl -gt 0) {
-                Write-Host "Es sind noch Benutzer in der Gruppe. Nur Gruppen ohne Mitglieder werden gelöscht"
+                $message =  "Es sind noch Benutzer in der Gruppe. Nur Gruppen ohne Mitglieder werden gelöscht"
+                Write-Log -message $message -logFilePath $config.LogFileActivities
             }
             else {
 
@@ -48,18 +52,21 @@ function Clear-Oldgroups {
                     Remove-ADGroup -Identity $group -Confirm:$false
 
                     
-                    Write-Host "Die Gruppe '$group' wurde gelöscht"
+                    $message =  "Die Gruppe '$group' wurde gelöscht"
+                    Write-Log -message $message -logFilePath $config.LogFileActivities
                     $deletedGruopCount++
                 }
                 catch {
-                    Write-Error "Beim Deaktivieren der Gruppe '$group' ist ein Fehler aufgetreten."
-                    Write-Error $_
+                    $errorMessage =  "Beim Deaktivieren der Gruppe '$group' ist ein Fehler aufgetreten.`n$_"
+                    Write-Log -message $errorMessage -logFilePath $config.LogFileActivities
                 }
             }  
         }
     }
     # Am schluss gib die Totale anzahl gelöschter Gruppen aus (so sehen wir auch wenn keine Gruppe gelöscht wird)
-    Write-Host "Anzahl deaktivierter Gruppen: $deletedGroupCount`n"
+    $message = "Anzahl deaktivierter Gruppen: $deletedGroupCount`n"
+    Write-Log -message $message -logFilePath $config.LogFileActivities
+    Write-Host $message -ForegroundColor Blue
 }
 
 function Add-KlassenFromCsv{
@@ -68,13 +75,17 @@ function Add-KlassenFromCsv{
     param (
         [array]$csvKlassen
     )
+    $successfulGroup = 0
+    $errorCounter = 0
+    $skippedGroup = 0
 
     # loope durch gruppen. Jede Gruppe ist eine klasse [PKB24A]
     foreach ($group in $csvKlassen) {
   
         # Überprüfe ob Klasse leer ist
         if ([string]::IsNullOrWhiteSpace($group)) {
-            Write-Host "Klasse ist leer"
+            $message = "Klasse ist leer"
+            Write-Log -message $message -logFilePath $config.LogFileActivities
             continue
         } 
         else {
@@ -83,7 +94,9 @@ function Add-KlassenFromCsv{
 
             #Wenn Rückgabeparameter 1 ist
             if ($existingGroup) {
-                Write-Output "Die Gruppe '$group' existiert bereits. Erstellung wird übersprungen.`n"
+                $message = "Die Gruppe '$group' existiert bereits. Erstellung wird übersprungen.`n"
+                Write-Log -message $message -logFilePath $config.LogFileActivities
+                $skippedGroup++
                 continue 
             }
             # wenn rückgabeparameter 0 ist 
@@ -97,15 +110,21 @@ function Add-KlassenFromCsv{
                                 -Path "OU=$($config.OUKlasse),$($config.OUPath)" `
                                 -Description "Schüler der Klasse $$group"
             
-                    Write-Output "Die Klasse '$group' wurde erfolgreich erstellt.`n"
+                    $message = "Die Klasse '$group' wurde erfolgreich erstellt.`n"
+                    Write-Log -message $message -logFilePath $config.LogFileActivities
+                    $successfulGroup++
                 }
                 catch {
-                    Write-Error "Beim erstellen der Gruppe '$klassenName' ist ein Fehler aufgetreten."
-                    Write-Error $_
+                    errorMessage = "Beim erstellen der Gruppe '$klassenName' ist ein Fehler aufgetreten.`n$_"
+                    Write-Log -message $errorMessage -logFilePath $config.LogFileActivities
+                    $errorCounter++
                 }
             }
         }
     }
+    $message = "$($successfulGroup) Gruppen wurden erstellt, $($skippedGroup) erstellungen übersprungen, $($errorCounter) Fehler."
+    Write-Log -message $message -logFilePath $config.LogFileActivities
+    Write-Host $message -ForegroundColor Blue
 }
 
 function Get-ADGroupsFromCSV {
@@ -145,7 +164,7 @@ function Get-ADGroupsFromCSV {
                 $Continue = $false
             }
             Default {
-                Write-Host "Ungültige Wahl. Bitte wählen Sie eine gültige Option (1-3).`n"
+                Write-Host "Ungültige Wahl. Bitte wählen Sie eine gültige Option (1-3).`n" -ForegroundColor Red
             }
         }
     }       

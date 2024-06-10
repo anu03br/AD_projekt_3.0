@@ -7,8 +7,8 @@
 # 16.05.24 V0.5 Skript Erstellt
 # 17.05.24 v0.6 Skript läuft ohne fehler
 # 21.05.24 v0.7 Aufgrund datenverlust Skript neu geschrieben
-# 21.05.24 v1.0 Getestet, Skript lauft korrekt und ohne Fehler
-# 21.05.24 v1.1 Abfrage nach gesperrten benutzern hinzugefügt (mit anzeige der anzahl falls 0)
+# 21.05.24 v0.8 Getestet, Skript lauft korrekt und ohne Fehler
+# 21.05.24 v1.0 Abfrage nach gesperrten benutzern hinzugefügt (mit anzeige der anzahl falls 0)
 #--------------------------------------------------------------------------------
 #2c
 function Show-ADUserManagementMenu {
@@ -49,7 +49,7 @@ function Show-ADUserManagementMenu {
                 $Continue = $false  
             }
             default {
-                Write-Host "Ungültige Wahl. Bitte wählen Sie eine gültige Option (1-4).`n"
+                Write-Host "Ungültige Wahl. Bitte wählen Sie eine gültige Option (1-4).`n" -ForegroundColor Red
             }
         }
     }

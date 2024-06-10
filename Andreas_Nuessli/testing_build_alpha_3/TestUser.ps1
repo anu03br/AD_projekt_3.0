@@ -1,3 +1,4 @@
+# delete before Shipping
 New-ADUser  -GivenName "Andreas" `
             -Surname "Nuessli" `
             -Name "Andreas Nuessli" `

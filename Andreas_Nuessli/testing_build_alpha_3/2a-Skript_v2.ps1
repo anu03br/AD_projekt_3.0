@@ -40,5 +40,6 @@ while ($true) {
         Write-Host "Ein Logfile wurde NICHT erstellt, aus jeglichen Gründen"
     }
     #this sleeps the whole console - find a better way
-    Start-Sleep -Seconds 86400  # Warte 24 Stunden = 86400 Sekunden
+    #Start-Sleep -Seconds 86400  # Warte 24 Stunden = 86400 Sekunden
+    Write-Host " hier passieren Sachen" -ForegroundColor Red
 }

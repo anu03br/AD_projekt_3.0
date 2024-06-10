@@ -12,7 +12,7 @@
 
 # HashTable der Variable $config mit den Keys und Values.
 $config = @{
-    SchuelerCsv  = ".\schueler.csv"
+    SchuelerCsv  = ".\schuelertest.csv"
     CSVOhneUmlaut  = ".\schueler2.csv"
     #testpath for Text-Umwandlung
     Test1        = ".\schueler-klein.csv"
@@ -23,6 +23,7 @@ $config = @{
     OUKlasse     = "Klassengruppen"
     LogFileUser  = ".\logfiles\users\users.log"
     LogFileGroup = ".\logfiles\groups\groups.log"
+    LogFileActivities = ".\logfiles\activities\activities.log"
     ClassFolder  = ".\\Klassen"
     Domain       = "bztf.local"
     # Organitation wird in -Title gespeichertd

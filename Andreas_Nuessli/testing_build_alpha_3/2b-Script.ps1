@@ -8,18 +8,45 @@
 #                       - Konto entsperren
 #                       - Konto aktivieren
 #                       - Passwort neu setzen
+# ChangeLog
+# anu - redid input messages, integrated Write-Log into 2b
 #-------------------------------------------------
 
+# funktion Write-Log importieren
+. "$PSScriptRoot\Write-Log.ps1"  
+# config file mit relativen pfad laden
+. ".\config.ps1"
+
 function Funktion-2b {
+
+    # Function to get a valid user
+    function Get-ValidUser {
+        
+        do {
+            $Benutzername = Read-Host "Bitte geben Sie den SamAccountNamen des zu bearbeitenden Benutzers ein`nBeispiel(leif.sterchi)"
+            $existingUser = Get-ADUser -Filter "SamAccountName -eq '$Benutzername'" -ErrorAction SilentlyContinue
+
+            if (-not $existingUser) {
+                $message = "Der Benutzer '$Benutzername' wurde nicht gefunden. Bitte versuchen Sie es erneut."
+                Write-Log -message $message -logFilePath $config.LogFileActivities
+                Write-Host $message -ForegroundColor Red
+            }
+        } until ($existingUser)
+
+        return $Benutzername
+    }
 
     # Konto entsperren: Nach vielen Anmeldeversuchen wird der Account gesperrt, deshalb wird er hier nun entsperrt.
     function KontoEntsperren {
         try {
             Unlock-ADAccount -Identity $Benutzer
 
-            Write-Host "Das Konto '$Benutzer' wurde erfolgreich entsperrt."
+            $message = "Das Konto '$Benutzer' wurde erfolgreich entsperrt."
+            Write-Log -message $message -logFilePath $config.LogFileActivities
+            Write-Host $message -ForegroundColor Blue
         } catch {
-            Write-Host "Fehler beim Entsperren des Kontos '$Benutzer': $_"
+            $errorMessage =  "Fehler beim Entsperren des Kontos '$Benutzer': $_"
+            Write-Log -message $errorMessage -logFilePath $config.LogFileActivities
         }
     }
 
@@ -29,9 +56,12 @@ function Funktion-2b {
         try {
             Enable-ADAccount -Identity $Benutzer
 
-            Write-Host "Das Konto '$Benutzer' wurde erfolgreich aktiviert."
+            $message = "Das Konto '$Benutzer' wurde erfolgreich aktiviert."
+            Write-Log -message $message -logFilePath $config.LogFileActivities
+            Write-Host $message -ForegroundColor Blue
         } catch {
-            Write-Host "Fehler beim Aktivieren des Kontos '$Benutzer': $_"
+            $errorMessage = "Fehler beim Aktivieren des Kontos '$Benutzer': $_"
+            Write-Log -message $errorMessage -logFilePath $config.LogFileActivities
         }
     }
 
@@ -47,17 +77,20 @@ function Funktion-2b {
             # Passwortänderung erzwingen
             Set-ADUser -Identity $Benutzer -ChangePasswordAtLogon $False
 
-            Write-Host "Das Passwort des Kontos '$Benutzer' wurde erfolgreich erstellt."
+            $message = "Das Passwort des Kontos '$Benutzer' wurde erfolgreich erstellt."
+            Write-Log -message $message -logFilePath $config.LogFileActivities
+            Write-Host $message -ForegroundColor Blue
+
         } catch {
-            Write-Host "Fehler beim ändern des Passworts des Kontos '$Benutzer': $_"
+            $errorMessage = "Fehler beim ändern des Passworts des Kontos '$Benutzer': $_"
+            Write-Log -message $errorMessage -logFilePath $config.LogFileActivities
         }
     }
-
-    $Benutzer = Read-Host "Bitte geben Sie den SamAccountNamen des zu bearbeitenden Benutzers ein`nBeispiel(leif.sterchi)"
+    # Benutzernamen Abfragen
+    $Benutzer = Get-ValidUser
     $continue = $true
-
     while ($continue) {
-        
+    
         Write-Host "Bitte wählen Sie:`n"
         Write-Host "1. Das Konto des gewählten Benutzers entsperren"
         Write-Host "2. Das Konto des gewählten Benutzers aktivieren"
@@ -65,7 +98,7 @@ function Funktion-2b {
         Write-Host "4. Einen anderen Benutzer auswählen"
         Write-Host "5. Zurück ins Hauptmenü`n"
 
-        $frage2b = Read-Host "Bitte wählen Sie eine Option (1-4)`n"
+        $frage2b = Read-Host "Bitte wählen Sie eine Option (1-5)`n"
         if ($frage2b -eq "1") {
             KontoEntsperren
         }
@@ -76,16 +109,17 @@ function Funktion-2b {
             PWneu
         }
         elseif ($frage2b -eq "4") {
-            $Benutzer = Read-Host "Bitte geben Sie den SamAccountNamen des anderen Benutzers ein`nBeispiel(leif.sterchi)"
+            #neuen benutzernamen Abfragen
+            $Benutzer = Get-ValidUser
         }
         elseif ($frage2b -eq "5") {
             # Geht zurück ins Hauptmenü
             $Continue = $false
         }
         else {
-            "Fehler"
+            Write-Host "Ungültige Wahl. Bitte wählen Sie eine gültige Option (1-5).`n" -ForegroundColor Red
         }
+        
     }    
 }
-
 Funktion-2b

@@ -56,7 +56,7 @@ while ($Continue) {
             $Continue = $false
         }
         Default {
-            Write-Host "Ungültige Wahl. Bitte wählen Sie eine gültige Option (1-5).`n"
+            Write-Host "Ungültige Wahl. Bitte wählen Sie eine gültige Option (1-5).`n" -ForegroundColor Red
         }
     }   
 }
