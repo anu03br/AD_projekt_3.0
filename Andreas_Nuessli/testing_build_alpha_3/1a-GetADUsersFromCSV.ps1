@@ -100,22 +100,23 @@ function Add-UsersFromCsv {
 
     foreach ($user in $csv) {
 
+        # den benutzernamen des users zwischenspeichern
+        $Benutzername = $user.Benutzername
+        # wenn Benutzernamen länger als 20 Zeichen sind werden sie gekürtzt
+        # SamAccountNames dürfen nicht länger als 20 Zeichen sein
+        if ($Benutzername.Length -gt 19) {
+            # Kürze alle Benutzernamen auf 20 zeichen
+            $Benutzername = $Benutzername.Substring(0, 19)
+        }
+         Write-Host "Original Benutzername: '$($user.Benutzername)', Bereinigt: '$Benutzername', Länge: $($Benutzername.Length)"
+
         # überprüfe, ob der Benutzer bereits im AD existiert
-        $existingUser = Get-ADUser -Filter "SamAccountName -eq '$($user.Benutzername)'" -ErrorAction SilentlyContinue
+        $existingUser = Get-ADUser -Filter "SamAccountName -eq '$Benutzername'" -ErrorAction SilentlyContinue
         if ($existingUser) {
-            Write-Output "Der Benutzer '$($user.Benutzername)' existiert bereits. Erstellung wird übersprungen.`n"
+            Write-Output "Der Benutzer '$Benutzername' existiert bereits. Erstellung wird übersprungen.`n"
             continue
         } else {
-            # den benutzernamen des users zwischenspeichern
-            $Benutzername = $user.Benutzername
-
-            # wenn Benutzernamen länger als 20 Zeichen sind werden sie gekürtzt
-            # SamAccountNames dürfen nicht länger als 20 Zeichen sein
-            if ($Benutzername.Length -gt 20) {
-                # Kürze alle Benutzernamen auf 20 zeichen
-                $Benutzername = $Benutzername.Substring(0, 20)
-            }
-
+           
             # wenn der User noch nicht existiert erstelle einen Neuen Account
             # "@bztf.local" und BZTF Frauenfeld in config varfiablen auslagern $Config.domain = "Bztf.local"
             try {
@@ -133,10 +134,10 @@ function Add-UsersFromCsv {
                            -Company $user.Klasse `
                            -Department $user.Klasse2
 
-                Write-Output "Der Benutzer '$($user.Benutzername)' wurde erfolgreich erstellt.`n"
+                Write-Output "Der Benutzer '$Benutzername' wurde erfolgreich erstellt.`n"
             }
             catch {
-                Write-Error "Beim erstellen des Benutzers '$($user.Benutzername)' ist ein Fehler aufgetreten."
+                Write-Error "Beim erstellen des Benutzers '$Benutzername)' ist ein Fehler aufgetreten."
                 Write-Error $_
             }
             # if any groupname is "" this fails

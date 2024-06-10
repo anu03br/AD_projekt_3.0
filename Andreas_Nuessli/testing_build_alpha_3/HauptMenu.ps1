@@ -30,19 +30,16 @@ while ($Continue) {
         1 {
             Write-Host "CSV abgleich der User wird gestartet..`n"
             .\1a-GetADUsersFromCSV.ps1
-
         }
         # 1b
         2 {
             Write-Host "CSV abgleich der Gruppen wird gestartet..`n"
             .\1b-Get-ADGroupsFromCSV.ps1
-
         }
         # 2a
         3 {
             Write-Host "Logfile erstellung wird gestartet..`n"
             .\2a-Skript_v2.ps1
-
         }
         # 2b   
         4 {

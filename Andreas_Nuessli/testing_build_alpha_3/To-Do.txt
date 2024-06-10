@@ -1,3 +1,4 @@
+thursday 06.06.24
 CSV import
 # works but "Joël" is not converted to "Joel"
 
@@ -9,7 +10,13 @@ CSV import
 ## Added check 
 if ([string]::IsNullOrWhiteSpace($GroupName))
 to function AddToGroup
-#It now works as intended
+#still got errors when importing users
+# this is because the get-ADUser comman to check if exists needs to check for substring not full benutzername
+
+1.2 disabling users
+# long name users will be disabeld because it checks for full benutzername not substring
+
+1.1 doppelte ausgabe vsc convertieren
 
 1b
 works
@@ -27,6 +34,7 @@ this way the function is 1. menuedriven 2. automated
 -if possible we could also divert all error messages to a seperate log.
 
 2b - done
+## when asking for username then check if user exists. if not exists ask again( make this a sub function)
 
 !nice but can we have a menue so I can input a samaccountname and the do as many things as i want
 then push a number to get back to main menue.
