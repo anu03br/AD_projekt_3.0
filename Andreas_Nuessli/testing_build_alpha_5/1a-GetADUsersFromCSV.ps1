@@ -149,6 +149,7 @@ function Add-UsersFromCsv {
 
                 $message = "Der Benutzer '$Benutzername' wurde erfolgreich erstellt.`n"
                 Write-Log -message $message -logFilePath $config.LogFileActivities
+                Write-Host $message
                 $successfulUser++
             }
             catch {

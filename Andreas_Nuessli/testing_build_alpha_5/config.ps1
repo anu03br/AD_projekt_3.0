@@ -17,7 +17,7 @@ $config = @{
     OUPath       = "OU=BZTF,DC=bztf,DC=local"
     OULernende   = "Lernende"
     OUKlasse     = "Klassengruppen"
-    LogFileUser  = ".\logfiles\users\users.log"
+    LogFileUser  = ".\logfiles\users\" # added /users.log
     LogFileGroup = ".\logfiles\groups\groups.log"
     LogFileActivities = ".\logfiles\activities\activities.log"
     ClassFolder  = ".\\Klassen"
