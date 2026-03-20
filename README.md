@@ -5,5 +5,5 @@ Powershell Scrit für das Anlegen und Management von Active Directory Benutzern
 -Funktionen für Listing von gesperrten Nutzern
 -Menügeführt via Powershell Terminal
 
--hallo welt
+
 
